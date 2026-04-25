@@ -1,0 +1,3351 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name='robots' content='max-image-preview:large' />
+    <meta name="generator" content="WordPress 6.9.4" />
+    <meta name="generator" content="Elementor 4.0.1; features: e_font_icon_svg, additional_custom_breakpoints; settings: css_print_method-external, google_font-enabled, font_display-swap">
+    <meta name="msapplication-TileImage" content="https://evoluirsempre.site/wp-content/uploads/2026/03/cropped-cropped-a099b9f7-2dda-45b4-8f97-d29b25cb3527-removebg-preview-270x270.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <script id="bv-lazyload-images" data-cfasync="false" bv-exclude="true">
+        var __defProp = Object.defineProperty;
+        var __name = (target, value) => __defProp(target, "name", {
+            value,
+            configurable: !0
+        });
+        var bv_lazyload_event_listener = "load",
+            bv_lazyload_events = ["mousemove", "click", "keydown", "wheel", "touchmove", "touchend"],
+            bv_use_srcset_attr = !1,
+            BV_DEBUG_MODE = !1,
+            bv_style_observer, img_observer, picture_lazy_observer;
+
+        function bvDebugLog(...args) {
+            BV_DEBUG_MODE && console.log(...args)
+        }
+        __name(bvDebugLog, "bvDebugLog"), bv_lazyload_event_listener == "load" ? window.addEventListener("load", event => {
+            handle_lazyload_images()
+        }) : bv_lazyload_event_listener == "readystatechange" && document.addEventListener("readystatechange", event => {
+            document.readyState === "interactive" && handle_lazyload_images()
+        });
+
+        function add_lazyload_image_event_listeners(handle_lazyload_images2) {
+            bv_lazyload_events.forEach(function(event) {
+                document.addEventListener(event, handle_lazyload_images2, !0)
+            })
+        }
+        __name(add_lazyload_image_event_listeners, "add_lazyload_image_event_listeners");
+
+        function remove_lazyload_image_event_listeners() {
+            bv_lazyload_events.forEach(function(event) {
+                document.removeEventListener(event, handle_lazyload_images, !0)
+            })
+        }
+        __name(remove_lazyload_image_event_listeners, "remove_lazyload_image_event_listeners");
+
+        function bv_replace_lazyloaded_image_url(element2) {
+            let src_value = element2.getAttribute("bv-data-src"),
+                srcset_value = element2.getAttribute("bv-data-srcset"),
+                currentSrc = element2.getAttribute("src");
+            currentSrc && currentSrc.startsWith("data:image/svg+xml") && (bv_use_srcset_attr && srcset_value && element2.setAttribute("srcset", srcset_value), src_value && element2.setAttribute("src", src_value))
+        }
+        __name(bv_replace_lazyloaded_image_url, "bv_replace_lazyloaded_image_url");
+
+        function bv_replace_inline_style_image_url(element2) {
+            let bv_style_attr = element2.getAttribute("bv-data-style");
+            if (bvDebugLog(bv_style_attr), bv_style_attr) {
+                let currentStyles = element2.getAttribute("style") || "",
+                    newStyle = currentStyles + (currentStyles ? ";" : "") + bv_style_attr;
+                element2.setAttribute("style", newStyle)
+            } else bvDebugLog("BV_STYLE_ATTRIBUTE_NOT_FOUND : " + entry)
+        }
+        __name(bv_replace_inline_style_image_url, "bv_replace_inline_style_image_url");
+
+        function handleLazyloadImages(entries) {
+            entries.map(entry2 => {
+                entry2.isIntersecting && (bv_replace_lazyloaded_image_url(entry2.target), img_observer.unobserve(entry2.target))
+            })
+        }
+        __name(handleLazyloadImages, "handleLazyloadImages");
+
+        function handleOnscreenInlineStyleImages(entries) {
+            entries.map(entry2 => {
+                entry2.isIntersecting && (bv_replace_inline_style_image_url(entry2.target), bv_style_observer.unobserve(entry2.target))
+            })
+        }
+        __name(handleOnscreenInlineStyleImages, "handleOnscreenInlineStyleImages");
+
+        function handlePictureTags(entries) {
+            entries.map(entry2 => {
+                entry2.isIntersecting && (bv_replace_picture_tag_url(entry2.target), picture_lazy_observer.unobserve(entry2.target))
+            })
+        }
+        __name(handlePictureTags, "handlePictureTags");
+
+        function bv_replace_picture_tag_url(element2) {
+            const child_elements = element2.children;
+            for (let i = 0; i < child_elements.length; i++) {
+                let child_elem = child_elements[i],
+                    _srcset = child_elem.getAttribute("bv-data-srcset"),
+                    _src = child_elem.getAttribute("bv-data-src");
+                _srcset && child_elem.setAttribute("srcset", _srcset), _src && child_elem.setAttribute("src", _src), bv_replace_picture_tag_url(child_elem)
+            }
+        }
+        __name(bv_replace_picture_tag_url, "bv_replace_picture_tag_url"), "IntersectionObserver" in window && (bv_style_observer = new IntersectionObserver(handleOnscreenInlineStyleImages), img_observer = new IntersectionObserver(handleLazyloadImages), picture_lazy_observer = new IntersectionObserver(handlePictureTags));
+
+        function handle_lazyload_images() {
+            "IntersectionObserver" in window ? (document.querySelectorAll(".bv-lazyload-bg-style").forEach(target_element => {
+                bv_style_observer.observe(target_element)
+            }), document.querySelectorAll(".bv-lazyload-tag-img").forEach(img_element => {
+                img_observer.observe(img_element)
+            }), document.querySelectorAll(".bv-lazyload-picture").forEach(picture_element => {
+                picture_lazy_observer.observe(picture_element)
+            })) : (document.querySelectorAll(".bv-lazyload-bg-style").forEach(target_element => {
+                bv_replace_inline_style_image_url(target_element)
+            }), document.querySelectorAll(".bv-lazyload-tag-img").forEach(target_element => {
+                bv_replace_lazyloaded_image_url(target_element)
+            }), document.querySelectorAll(".bv-lazyload-picture").forEach(picture_element => {
+                bv_replace_picture_tag_url(element)
+            }))
+        }
+        __name(handle_lazyload_images, "handle_lazyload_images");
+    </script>
+
+    <script id="bv-viewport-image-hydration" data-cfasync="false" bv-exclude="true">
+        var __defProp = Object.defineProperty;
+        var __name = (target, value) => __defProp(target, "name", {
+            value,
+            configurable: !0
+        });
+        const BV_VIEWPORT_IMAGE_CLASS = "bv-viewport-img",
+            BV_VIEWPORT_IMAGE_SWAP_MODE = "src";
+
+        function getViewportImageDeviceName() {
+            let device_width = window.outerWidth;
+            return device_width <= 480 ? "mobile" : device_width <= 820 ? "ipad" : device_width <= 1536 ? "desktop" : "large"
+        }
+        __name(getViewportImageDeviceName, "getViewportImageDeviceName");
+
+        function getViewportHydrationAttr(node_element, attr_suffix, device_name) {
+            let attr_names = ["bv-data-" + device_name + "-" + attr_suffix, "bv-data-large-" + attr_suffix];
+            for (let index = 0; index < attr_names.length; index += 1) {
+                let attr_value = node_element.getAttribute(attr_names[index]);
+                if (attr_value) return attr_value
+            }
+            return ""
+        }
+        __name(getViewportHydrationAttr, "getViewportHydrationAttr");
+
+        function hydrateViewportImage(node_element) {
+            if (!node_element || node_element.getAttribute("bv-viewport-hydrated") === "1") return;
+            let hydrated = !1,
+                device_name = getViewportImageDeviceName(),
+                src_attr = getViewportHydrationAttr(node_element, "src", device_name),
+                srcset_attr = getViewportHydrationAttr(node_element, "srcset", device_name);
+            BV_VIEWPORT_IMAGE_SWAP_MODE === "srcset" && srcset_attr && (node_element.setAttribute("srcset", srcset_attr), hydrated = !0), src_attr && (node_element.setAttribute("src", src_attr), hydrated = !0), hydrated && node_element.setAttribute("bv-viewport-hydrated", "1")
+        }
+        __name(hydrateViewportImage, "hydrateViewportImage");
+
+        function hydrateViewportImages() {
+            let img_tags = document.querySelectorAll("." + BV_VIEWPORT_IMAGE_CLASS);
+            setTimeout(() => {
+                img_tags.forEach(img_tag => {
+                    hydrateViewportImage(img_tag)
+                })
+            }, 0)
+        }
+        __name(hydrateViewportImages, "hydrateViewportImages"), document.readyState === "loading" ? document.addEventListener("DOMContentLoaded", hydrateViewportImages) : hydrateViewportImages();
+    </script>
+
+    <script id="bv-dl-scripts-list" data-cfasync="false" bv-exclude="true">
+        var scriptAttrs = [{
+            "attrs": {
+                "src": "https:\/\/evoluirsempre.site\/wp-content\/uploads\/al_opt_content\/SCRIPT\/evoluirsempre.site\/.\/wp-includes\/js\/jquery\/69df83f646fa5cda282b7fd9\/69df83f646fa5cda282b7fd9-16cb9084c573484b0cbcd8b282b41204_jquery.min.js?ver=3.7.1",
+                "id": "jquery-core-js",
+                "defer": true,
+                "data-cfasync": false,
+                "async": false,
+                "bv_inline_delayed": false
+            },
+            "bv_unique_id": "6qbKVzhlcHRkFMGITgDG",
+            "reference": 0
+        }, {
+            "attrs": {
+                "src": "https:\/\/evoluirsempre.site\/wp-content\/uploads\/al_opt_content\/SCRIPT\/evoluirsempre.site\/.\/wp-includes\/js\/jquery\/69df83f646fa5cda282b7fd9\/69df83f646fa5cda282b7fd9-9ffeb32e2d9efbf8f70caabded242267_jquery-migrate.min.js?ver=3.4.1",
+                "id": "jquery-migrate-js",
+                "defer": true,
+                "data-cfasync": false,
+                "async": false,
+                "bv_inline_delayed": false
+            },
+            "bv_unique_id": "MdH433CSeQTqpULM9Muw",
+            "reference": 1
+        }, {
+            "attrs": {
+                "defer": true,
+                "data-cfasync": false,
+                "async": false,
+                "bv_inline_delayed": true
+            },
+            "bv_unique_id": "Y1LvdEqII35mCaL0Xodv",
+            "reference": 2
+        }, {
+            "attrs": {
+                "defer": true,
+                "data-cfasync": false,
+                "async": false,
+                "src": "https:\/\/cdn.utmify.com.br\/scripts\/utms\/latest.js",
+                "data-utmify-prevent-xcod-sck": "",
+                "data-utmify-prevent-subids": "",
+                "bv_inline_delayed": false
+            },
+            "bv_unique_id": "KDRRVhFDHgFSV8soPIeH",
+            "reference": 3
+        }, {
+            "attrs": {
+                "defer": true,
+                "data-cfasync": false,
+                "async": false,
+                "bv_inline_delayed": true
+            },
+            "bv_unique_id": "EyqLUmYd9zEZ8cQGTvE7",
+            "reference": 4
+        }, {
+            "attrs": {
+                "defer": true,
+                "data-cfasync": false,
+                "async": false,
+                "bv_inline_delayed": true
+            },
+            "bv_unique_id": "g3or0DOUFPyQmLO0Jhya",
+            "reference": 5
+        }, {
+            "attrs": {
+                "defer": true,
+                "data-cfasync": false,
+                "async": false,
+                "type": "text\/javascript",
+                "bv_inline_delayed": true
+            },
+            "bv_unique_id": "Xqkcq8zJelQKgOt97uhF",
+            "reference": 6
+        }, {
+            "attrs": {
+                "defer": true,
+                "data-cfasync": false,
+                "bv_inline_delayed": true,
+                "type": "text\/javascript",
+                "async": false
+            },
+            "bv_unique_id": "u19kjb2SCopvUxtXps9d",
+            "reference": 7
+        }, {
+            "attrs": {
+                "src": "https:\/\/evoluirsempre.site\/wp-content\/uploads\/al_opt_content\/SCRIPT\/evoluirsempre.site\/.\/wp-includes\/js\/dist\/69df83f646fa5cda282b7fd9\/69df83f646fa5cda282b7fd9-90e932bd9e62583fc494c00498cfe7f5_hooks.min.js?ver=dd5603f07f9220ed27f1",
+                "id": "wp-hooks-js",
+                "defer": true,
+                "data-cfasync": false,
+                "async": false,
+                "bv_inline_delayed": false
+            },
+            "bv_unique_id": "Lp3xt7PFU5A6tT4ovkmf",
+            "reference": 8
+        }, {
+            "attrs": {
+                "src": "https:\/\/evoluirsempre.site\/wp-content\/uploads\/al_opt_content\/SCRIPT\/evoluirsempre.site\/.\/wp-includes\/js\/dist\/69df83f646fa5cda282b7fd9\/69df83f646fa5cda282b7fd9-3a5838d1182eb0b11f5a58bfe26e2529_i18n.min.js?ver=c26c3dc7bed366793375",
+                "id": "wp-i18n-js",
+                "defer": true,
+                "data-cfasync": false,
+                "async": false,
+                "bv_inline_delayed": false
+            },
+            "bv_unique_id": "0oHdMF1StdqlZ3utISD2",
+            "reference": 9
+        }, {
+            "attrs": {
+                "id": "wp-i18n-js-after",
+                "defer": true,
+                "data-cfasync": false,
+                "bv_inline_delayed": true,
+                "type": "text\/javascript",
+                "async": false
+            },
+            "bv_unique_id": "Xhd1dlcOxVyVHcGELafZ",
+            "reference": 10
+        }, {
+            "attrs": {
+                "id": "presto-components-js-extra",
+                "defer": true,
+                "data-cfasync": false,
+                "bv_inline_delayed": true,
+                "type": "text\/javascript",
+                "async": false
+            },
+            "bv_unique_id": "VmPKiKxZ7lImwtceGfkz",
+            "reference": 11
+        }, {
+            "attrs": {
+                "src": "https:\/\/evoluirsempre.site\/wp-content\/uploads\/al_opt_content\/SCRIPT\/evoluirsempre.site\/.\/wp-content\/plugins\/presto-player\/src\/player\/69df83f646fa5cda282b7fd9\/69df83f646fa5cda282b7fd9-9a914abacae6a27fc294a3e7ac849ad6_player-static.js?ver=1776059378",
+                "type": "module",
+                "defer": true,
+                "data-cfasync": false,
+                "async": false,
+                "bv_inline_delayed": false
+            },
+            "bv_unique_id": "66Osix3mzAHEUZm2Ez6Z",
+            "reference": 12
+        }, {
+            "attrs": {
+                "id": "hostinger-blog-theme-scripts-js-extra",
+                "defer": true,
+                "data-cfasync": false,
+                "bv_inline_delayed": true,
+                "type": "text\/javascript",
+                "async": false
+            },
+            "bv_unique_id": "gXjHkKugOLdPdyT1euwj",
+            "reference": 13
+        }, {
+            "attrs": {
+                "src": "https:\/\/evoluirsempre.site\/wp-content\/uploads\/al_opt_content\/SCRIPT\/evoluirsempre.site\/.\/wp-content\/themes\/hostinger-blog\/build\/scripts\/69df83f646fa5cda282b7fd9\/69df83f646fa5cda282b7fd9-6399339b93fbb2f579006f34f8e08364_main.js?ver=1.4.13",
+                "id": "hostinger-blog-theme-scripts-js",
+                "defer": true,
+                "data-cfasync": false,
+                "async": false,
+                "bv_inline_delayed": false
+            },
+            "bv_unique_id": "iH17j0xvnok5FG6o7EsV",
+            "reference": 14
+        }, {
+            "attrs": {
+                "defer": true,
+                "data-cfasync": false,
+                "async": false,
+                "src": "https:\/\/evoluirsempre.site\/wp-content\/plugins\/elementor\/assets\/js\/webpack.runtime.min.js?ver=4.0.1",
+                "id": "elementor-webpack-runtime-js",
+                "bv_inline_delayed": false
+            },
+            "bv_unique_id": "BK0R5Ab7nnfEtl7ILQrv",
+            "reference": 15
+        }, {
+            "attrs": {
+                "defer": true,
+                "data-cfasync": false,
+                "async": false,
+                "src": "https:\/\/evoluirsempre.site\/wp-content\/plugins\/elementor\/assets\/js\/frontend-modules.min.js?ver=4.0.1",
+                "id": "elementor-frontend-modules-js",
+                "bv_inline_delayed": false
+            },
+            "bv_unique_id": "LKzpQTvySHq6l60mv9h0",
+            "reference": 16
+        }, {
+            "attrs": {
+                "defer": true,
+                "data-cfasync": false,
+                "async": false,
+                "src": "https:\/\/evoluirsempre.site\/wp-includes\/js\/jquery\/ui\/core.min.js?ver=1.13.3",
+                "id": "jquery-ui-core-js",
+                "bv_inline_delayed": false
+            },
+            "bv_unique_id": "GDWRrNnC7FHFS6VMsUUK",
+            "reference": 17
+        }, {
+            "attrs": {
+                "defer": true,
+                "data-cfasync": false,
+                "async": false,
+                "id": "elementor-frontend-js-before",
+                "bv_inline_delayed": true
+            },
+            "bv_unique_id": "alFBBBV2ynOBh7JVqdKH",
+            "reference": 18
+        }, {
+            "attrs": {
+                "defer": true,
+                "data-cfasync": false,
+                "async": false,
+                "src": "https:\/\/evoluirsempre.site\/wp-content\/plugins\/elementor\/assets\/js\/frontend.min.js?ver=4.0.1",
+                "id": "elementor-frontend-js",
+                "bv_inline_delayed": false
+            },
+            "bv_unique_id": "YqqiE2Cc6D5cvS7Vn6Eo",
+            "reference": 19
+        }, {
+            "attrs": {
+                "defer": true,
+                "data-cfasync": false,
+                "async": false,
+                "src": "https:\/\/evoluirsempre.site\/wp-content\/plugins\/pro-elements\/assets\/js\/webpack-pro.runtime.min.js?ver=3.35.0",
+                "id": "elementor-pro-webpack-runtime-js",
+                "bv_inline_delayed": false
+            },
+            "bv_unique_id": "76PHqRaewRY8iRXwn8ED",
+            "reference": 20
+        }, {
+            "attrs": {
+                "defer": true,
+                "data-cfasync": false,
+                "async": false,
+                "id": "elementor-pro-frontend-js-before",
+                "bv_inline_delayed": true
+            },
+            "bv_unique_id": "4BstRrMkwcgr6KKOpXn1",
+            "reference": 21
+        }, {
+            "attrs": {
+                "defer": true,
+                "data-cfasync": false,
+                "async": false,
+                "src": "https:\/\/evoluirsempre.site\/wp-content\/plugins\/pro-elements\/assets\/js\/frontend.min.js?ver=3.35.0",
+                "id": "elementor-pro-frontend-js",
+                "bv_inline_delayed": false
+            },
+            "bv_unique_id": "xXwMDG0aaak2L1V8OYsq",
+            "reference": 22
+        }, {
+            "attrs": {
+                "defer": true,
+                "data-cfasync": false,
+                "async": false,
+                "src": "https:\/\/evoluirsempre.site\/wp-content\/plugins\/pro-elements\/assets\/js\/elements-handlers.min.js?ver=3.35.0",
+                "id": "pro-elements-handlers-js",
+                "bv_inline_delayed": false
+            },
+            "bv_unique_id": "Ny82Ot7jI28JAXph5AaJ",
+            "reference": 23
+        }, {
+            "attrs": {
+                "type": "module",
+                "defer": true,
+                "data-cfasync": false,
+                "bv_inline_delayed": true,
+                "async": false
+            },
+            "bv_unique_id": "VaKsIqgrlLEg02RhmGF6",
+            "reference": 24
+        }, {
+            "attrs": {
+                "src": "data:text\/javascript;base64, ZnVuY3Rpb24gYnZfdHJpZ2dlcl9haXJsaWZ0X2V2ZW50KHRhcmdldCwgZXZlbnRfdHlwZSkgewoKICBpZiAoZXZlbnRfdHlwZSA9PT0gInJlYWR5c3RhdGVjaGFuZ2UiKSB7CiAgICBpZiAoYnZfc3RhdGVfY291bnRlciA9PT0gMCkgewogICAgICBidl9zdGF0ZV9jb3VudGVyICs9IDEKICAgICAgYnZfY3VzdG9tX3JlYWR5X3N0YXRlX3ZhbHVlID0gImludGVyYWN0aXZlIgogICAgfSBlbHNlIGlmKGJ2X3N0YXRlX2NvdW50ZXIgPT09IDEpIHsKICAgICAgYnZfc3RhdGVfY291bnRlciArPSAxCiAgICAgIGJ2X2N1c3RvbV9yZWFkeV9zdGF0ZV92YWx1ZSA9ICJjb21wbGV0ZSIKICAgIH0KICB9CgogIGxldCBldmVudF9uYW1lID0gIkFpcmxpZnQiICsgZXZlbnRfdHlwZTsKICBsZXQgc3ludGhldGljRXZlbnQgPSBuZXcgRXZlbnQoZXZlbnRfbmFtZSwgeyBidWJibGVzOiB0cnVlIH0pOwoKICBPYmplY3QuZGVmaW5lUHJvcGVydHkoc3ludGhldGljRXZlbnQsICJ0eXBlIiwgeyBnZXQ6IGZ1bmN0aW9uICgpIHsgcmV0dXJuIGV2ZW50X3R5cGU7IH0sIHNldDogZnVuY3Rpb24gKCkgeyB9IH0pOwogIE9iamVjdC5kZWZpbmVQcm9wZXJ0eShzeW50aGV0aWNFdmVudCwgInRhcmdldCIsIHsgZ2V0OiBmdW5jdGlvbiAoKSB7IHJldHVybiB0YXJnZXQ7IH0sIHNldDogZnVuY3Rpb24gKCkgeyB9IH0pOwoKICB0YXJnZXQuZGlzcGF0Y2hFdmVudChzeW50aGV0aWNFdmVudCk7Cn0KCmZ1bmN0aW9uIGJ2X2Rpc3BhdGNoRGVsYXllZEV2ZW50cygpIHsKICAgIGJ2X3RyaWdnZXJfYWlybGlmdF9ldmVudChkb2N1bWVudCwgInJlYWR5c3RhdGVjaGFuZ2UiKTsKICAgIGJ2X3RyaWdnZXJfYWlybGlmdF9ldmVudChkb2N1bWVudCwgIkRPTUNvbnRlbnRMb2FkZWQiKTsKCiAgICBzZXRUaW1lb3V0KCgpID0+IHsKICAgICAgICBidl90cmlnZ2VyX2FpcmxpZnRfZXZlbnQoZG9jdW1lbnQsICJyZWFkeXN0YXRlY2hhbmdlIik7CgogICAgICAgIHNldFRpbWVvdXQoKCkgPT4gewogICAgICAgICAgICBidl90cmlnZ2VyX2FpcmxpZnRfZXZlbnQod2luZG93LCAibG9hZCIpOwogICAgICAgICAgICBidl90cmlnZ2VyX2FpcmxpZnRfZXZlbnQod2luZG93LCAicGFnZXNob3ciKTsKICAgICAgICB9LCAwKTsKICAgIH0sIDApOwp9Cgp2YXIgYnZfc3RhdGVfY291bnRlciA9IDAKCmJ2X2Rpc3BhdGNoRGVsYXllZEV2ZW50cygpOwoK",
+                "id": "bv-trigger-listener",
+                "type": "text\/javascript",
+                "defer": true,
+                "async": false
+            },
+            "bv_unique_id": "d6fe9c24159ed4a27d224d91c70f8fdc",
+            "reference": 100000000
+        }];
+    </script>
+    <script id="bv-web-worker" type="javascript/worker" data-cfasync="false" bv-exclude="true">var __defProp=Object.defineProperty;var __name=(target,value)=>__defProp(target,"name",{value,configurable:!0});var BV_DEBUG_MODE=!1;function bvDebugLog(...args){BV_DEBUG_MODE&&console.log(...args)}__name(bvDebugLog,"bvDebugLog"),self.onmessage=function(e){var
+        counter=e.data.fetch_urls.length;e.data.fetch_urls.forEach(function(fetch_url){loadUrl(fetch_url,function(){bvDebugLog("DONE: "+fetch_url),counter=counter-1,counter===0&&self.postMessage({status:"SUCCESS"})})})};async function loadUrl(fetch_url,callback){try{var
+        request=new Request(fetch_url,{mode:"no-cors",redirect:"follow"});await fetch(request),callback()}catch(fetchError){bvDebugLog("Fetch Error loading URL:",fetchError);try{var xhr=new XMLHttpRequest;xhr.onerror=callback,xhr.onload=callback,xhr.responseType="blob",xhr.open("GET",fetch_url,!0),xhr.send()}catch(xhrError){bvDebugLog("XHR
+        Error loading URL:",xhrError),callback()}}}__name(loadUrl,"loadUrl");
+    </script>
+    <script id="bv-web-worker-handler" data-cfasync="false" bv-exclude="true">
+        var __defProp = Object.defineProperty;
+        var __name = (target, value) => __defProp(target, "name", {
+            value,
+            configurable: !0
+        });
+        if (typeof scriptAttrs < "u" && Array.isArray(scriptAttrs) && scriptAttrs.length > 0) {
+            const lastElement = scriptAttrs[scriptAttrs.length - 1];
+            if (lastElement.attrs && lastElement.attrs.id === "bv-trigger-listener") {
+                var bv_custom_ready_state_value = "loading";
+                Object.defineProperty(document, "readyState", {
+                    get: __name(function() {
+                        return bv_custom_ready_state_value
+                    }, "get"),
+                    set: __name(function() {}, "set")
+                })
+            }
+        }
+        if (typeof scriptAttrs > "u" || !Array.isArray(scriptAttrs)) var scriptAttrs = [];
+        if (typeof linkStyleAttrs > "u" || !Array.isArray(linkStyleAttrs)) var linkStyleAttrs = [];
+        var BV_DEBUG_MODE = !1;
+
+        function bvDebugLog(...args) {
+            BV_DEBUG_MODE && console.log(...args)
+        }
+        __name(bvDebugLog, "bvDebugLog");
+
+        function isMobileDevice() {
+            return window.innerWidth <= 500
+        }
+        __name(isMobileDevice, "isMobileDevice");
+        var js_dom_loaded = !1;
+        document.addEventListener("DOMContentLoaded", () => {
+            js_dom_loaded = !0
+        });
+        const EVENTS = ["mousemove", "click", "keydown", "wheel", "touchmove", "touchend"];
+        var scriptUrls = [],
+            styleUrls = [],
+            bvEventCalled = !1,
+            workerFinished = !1,
+            functionExec = !1,
+            scriptsInjected = !1,
+            stylesInjected = !1,
+            bv_load_event_fired = !1,
+            autoInjectTimerStarted = !1;
+        const BV_AUTO_INJECT_ENABLED = !0,
+            BV_DESKTOP_AUTO_INJECT_DELAY = 4e3,
+            BV_MOBILE_AUTO_INJECT_DELAY = 1e4,
+            BV_WORKER_TIMEOUT_DURATION = 3e3;
+        scriptAttrs.forEach((scriptAttr, index) => {
+            scriptAttr.attrs.src && !scriptAttr.attrs.src.includes("data:text/javascript") && (scriptUrls[index] = scriptAttr.attrs.src)
+        }), linkStyleAttrs.forEach((linkAttr, index) => {
+            styleUrls[index] = linkAttr.attrs.href
+        });
+        var fetchUrls = scriptUrls.concat(styleUrls);
+
+        function addEventListeners(bvEventHandler2) {
+            EVENTS.forEach(function(event) {
+                document.addEventListener(event, bvEventFired, !0), document.addEventListener(event, bvEventHandler2, !0)
+            })
+        }
+        __name(addEventListeners, "addEventListeners");
+
+        function removeEventListeners() {
+            EVENTS.forEach(function(event) {
+                document.removeEventListener(event, bvEventHandler, !0)
+            })
+        }
+        __name(removeEventListeners, "removeEventListeners");
+
+        function bvEventFired() {
+            bvEventCalled || (bvEventCalled = !0, workerFinished = !0)
+        }
+        __name(bvEventFired, "bvEventFired");
+
+        function bvGetElement(attributes, element) {
+            Object.keys(attributes).forEach(function(attr) {
+                attr === "async" ? element.async = attributes[attr] : attr === "innerHTML" ? element.innerHTML = atob(attributes[attr]) : element.setAttribute(attr, attributes[attr])
+            })
+        }
+        __name(bvGetElement, "bvGetElement");
+
+        function bvAddElement(attr, element) {
+            var attributes = attr.attrs;
+            if (attributes.bv_inline_delayed) {
+                let bvScriptId = attr.bv_unique_id,
+                    bvScriptElement = document.querySelector("[bv_unique_id='" + bvScriptId + "']");
+                bvScriptElement ? (!attributes.innerHTML && !attributes.src && bvScriptElement.textContent.trim() !== "" && (attributes.src = "data:text/javascript;base64, " + btoa(unescape(encodeURIComponent(bvScriptElement.textContent)))), bvGetElement(attributes, element), bvScriptElement.after(element)) : bvDebugLog(`Script not found for ${bvScriptId}`)
+            } else {
+                bvGetElement(attributes, element);
+                var templateId = attr.bv_unique_id,
+                    targetElement = document.querySelector("[id='" + templateId + "']");
+                targetElement && targetElement.after(element)
+            }
+        }
+        __name(bvAddElement, "bvAddElement");
+
+        function injectStyles() {
+            if (stylesInjected) {
+                bvDebugLog("Styles already injected, skipping");
+                return
+            }
+            stylesInjected = !0, document.querySelectorAll('style[type="bv_inline_delayed_css"], template[id]').forEach(element => {
+                if (element.tagName.toLowerCase() === "style") {
+                    var new_style = document.createElement("style");
+                    new_style.type = "text/css", new_style.textContent = element.textContent, element.after(new_style), new_style.parentNode ? element.remove() : bvDebugLog("PARENT NODE NOT FOUND")
+                } else if (element.tagName.toLowerCase() === "template") {
+                    var templateId = element.id,
+                        linkStyleAttr = linkStyleAttrs.find(attr => attr.bv_unique_id === templateId);
+                    if (linkStyleAttr) {
+                        var link = document.createElement("link");
+                        bvAddElement(linkStyleAttr, link), element.parentNode && element.parentNode.replaceChild(link, element), bvDebugLog("EXTERNAL STYLE ADDED")
+                    } else bvDebugLog(`No linkStyleAttr found for template ID ${templateId}`)
+                }
+            }), linkStyleAttrs.forEach((linkStyleAttr, index) => {
+                bvDebugLog("STYLE ADDED");
+                var element = document.createElement("link");
+                bvAddElement(linkStyleAttr, element)
+            })
+        }
+        __name(injectStyles, "injectStyles");
+
+        function injectScripts() {
+            if (scriptsInjected) {
+                bvDebugLog("Scripts already injected, skipping");
+                return
+            }
+            scriptsInjected = !0;
+            let last_script_element;
+            scriptAttrs.forEach((scriptAttr, index) => {
+                if (bv_custom_ready_state_value === "loading" && scriptAttr.attrs && scriptAttr.attrs.is_first_defer_element === !0)
+                    if (last_script_element) {
+                        const readyStateScript = document.createElement("script");
+                        readyStateScript.src = "data:text/javascript;base64, " + btoa(unescape(encodeURIComponent("bv_custom_ready_state_value = 'interactive';"))), readyStateScript.async = !1, last_script_element.after(readyStateScript)
+                    } else bv_custom_ready_state_value = "interactive", bvDebugLog('Ready state manually set to "interactive"');
+                bvDebugLog("JS ADDED");
+                var element = document.createElement("script");
+                last_script_element = element, bvAddElement(scriptAttr, element)
+            })
+        }
+        __name(injectScripts, "injectScripts");
+
+        function bvEventHandler() {
+            bvDebugLog("EVENT FIRED"), js_dom_loaded && bvEventCalled && workerFinished && !functionExec && (functionExec = !0, injectStyles(), injectScripts(), removeEventListeners())
+        }
+        __name(bvEventHandler, "bvEventHandler");
+
+        function autoInjectScriptsAfterLoad() {
+            js_dom_loaded && workerFinished && !scriptsInjected && !stylesInjected && (bvDebugLog("Auto-injecting styles and scripts after timer"), injectStyles(), injectScripts())
+        }
+        __name(autoInjectScriptsAfterLoad, "autoInjectScriptsAfterLoad");
+
+        function startAutoInjectTimer() {
+            if (BV_AUTO_INJECT_ENABLED && !autoInjectTimerStarted && bv_load_event_fired && !bvEventCalled) {
+                autoInjectTimerStarted = !0;
+                var delay = isMobileDevice() ? BV_MOBILE_AUTO_INJECT_DELAY : BV_DESKTOP_AUTO_INJECT_DELAY;
+                bvDebugLog("Starting auto-inject timer with delay: " + delay + "ms"), setTimeout(function() {
+                    autoInjectScriptsAfterLoad()
+                }, delay)
+            }
+        }
+        __name(startAutoInjectTimer, "startAutoInjectTimer"), addEventListeners(bvEventHandler);
+        var requestObject = window.URL || window.webkitURL,
+            bvWorker = new Worker(requestObject.createObjectURL(new Blob([document.getElementById("bv-web-worker").textContent], {
+                type: "text/javascript"
+            })));
+        bvWorker.onmessage = function(e) {
+            e.data.status === "SUCCESS" && (bvDebugLog("WORKER_FINISHED"), workerFinished = !0, bvEventHandler(), startAutoInjectTimer())
+        }, addEventListener("load", () => {
+            bvEventHandler(), bv_call_fetch_urls(), bv_load_event_fired = !0
+        });
+
+        function bv_call_fetch_urls() {
+            !bv_load_event_fired && !workerFinished && (bvWorker.postMessage({
+                fetch_urls: fetchUrls
+            }), bv_initiate_worker_timer())
+        }
+        __name(bv_call_fetch_urls, "bv_call_fetch_urls"), setTimeout(function() {
+            bv_call_fetch_urls()
+        }, 5e3);
+
+        function bv_initiate_worker_timer() {
+            setTimeout(function() {
+                workerFinished || (bvDebugLog("WORKER_TIMEDOUT"), workerFinished = !0, bvWorker.terminate()), bvEventHandler(), startAutoInjectTimer()
+            }, BV_WORKER_TIMEOUT_DURATION)
+        }
+        __name(bv_initiate_worker_timer, "bv_initiate_worker_timer");
+    </script>
+
+
+    <title>Receitas ZERO &#8211; evoluirsempre.site/mm</title>
+
+    <link rel="alternate" title="oEmbed (JSON)" type="application/json+oembed" href="https://evoluirsempre.site/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fevoluirsempre.site%2Freceitas-zero1%2F" />
+    <link rel="alternate" title="oEmbed (XML)" type="text/xml+oembed" href="https://evoluirsempre.site/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fevoluirsempre.site%2Freceitas-zero1%2F&#038;format=xml" />
+    <style id='wp-img-auto-sizes-contain-inline-css'>
+        img:is([sizes=auto i], [sizes^="auto," i]) {
+            contain-intrinsic-size: 3000px 1500px
+        }
+
+        /*# sourceURL=wp-img-auto-sizes-contain-inline-css */
+    </style>
+    <style id='wp-emoji-styles-inline-css'>
+        img.wp-smiley,
+        img.emoji {
+            display: inline !important;
+            border: none !important;
+            box-shadow: none !important;
+            height: 1em !important;
+            width: 1em !important;
+            margin: 0 0.07em !important;
+            vertical-align: -0.1em !important;
+            background: none !important;
+            padding: 0 !important;
+        }
+
+        /*# sourceURL=wp-emoji-styles-inline-css */
+    </style>
+    <style id='presto-player-popup-trigger-style-inline-css'>
+        :where(.wp-block-presto-player-popup-trigger) {
+            /* reduce specificity */
+            display: grid;
+            gap: 1rem;
+            cursor: pointer;
+        }
+
+        /* Play icon overlay for popup image trigger variation */
+
+        :where(.presto-popup-image-trigger) {
+            position: relative;
+            cursor: pointer;
+        }
+
+        :where(.presto-popup-image-trigger)::before {
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 48px;
+            height: 48px;
+            background-image: url("/wp-content/plugins/presto-player/src/admin/blocks/blocks/popup-trigger/../../../../../img/play-button.svg");
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            z-index: 10;
+            pointer-events: none;
+        }
+
+        :where(.presto-popup-image-trigger img) {
+            display: block;
+            width: 100%;
+            height: auto;
+            filter: brightness(0.5);
+        }
+
+        /*# sourceURL=https://evoluirsempre.site/wp-content/plugins/presto-player/src/admin/blocks/blocks/popup-trigger/style.css */
+    </style>
+    <style id='presto-player-popup-media-style-inline-css'>
+        .wp-block-presto-player-popup.is-selected .wp-block-presto-player-popup-media {
+            display: initial;
+        }
+
+        .wp-block-presto-player-popup.has-child-selected .wp-block-presto-player-popup-media {
+            display: initial;
+        }
+
+        .presto-popup__overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 100000;
+            overflow: hidden;
+            width: 100%;
+            height: 100vh;
+            box-sizing: border-box;
+            padding: 0 5%;
+            visibility: hidden;
+            opacity: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: opacity 0.2s ease, visibility 0.2s ease;
+            --presto-popup-media-width: 1280px;
+            --presto-popup-background-color: rgba(0, 0, 0, 0.917);
+        }
+
+        .presto-popup--active {
+            visibility: visible;
+            opacity: 1;
+        }
+
+        .presto-popup--active .presto-popup__content {
+            transform: scale(1);
+        }
+
+        .presto-popup__content {
+            position: relative;
+            z-index: 9999999999;
+            width: 100%;
+            max-width: var(--presto-popup-media-width);
+            transform: scale(0.9);
+            transition: transform 0.2s ease;
+        }
+
+        .presto-popup__close-button {
+            position: absolute;
+            top: calc(env(safe-area-inset-top) + 16px);
+            right: calc(env(safe-area-inset-right) + 16px);
+            padding: 0;
+            cursor: pointer;
+            z-index: 5000000;
+            min-width: 24px;
+            min-height: 24px;
+            width: 24px;
+            height: 24px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: none;
+            background: none;
+            box-shadow: none;
+            transition: opacity 0.2s ease;
+        }
+
+        .presto-popup__close-button:hover,
+        .presto-popup__close-button:focus {
+            opacity: 0.8;
+            background: none;
+            border: none;
+        }
+
+        .presto-popup__close-button:not(:hover):not(:active):not(.has-background) {
+            background: none;
+            border: none;
+        }
+
+        .presto-popup__close-button svg {
+            width: 24px;
+            height: 24px;
+            fill: white;
+        }
+
+        .presto-popup__scrim {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            z-index: 2000000;
+            background-color: var(--presto-popup-background-color, rgb(255, 255, 255));
+        }
+
+        .presto-popup__speak {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            white-space: nowrap;
+            border: 0;
+        }
+
+        /*# sourceURL=https://evoluirsempre.site/wp-content/plugins/presto-player/src/admin/blocks/blocks/popup-media/style.css */
+    </style>
+    <style id='theme-blocks-herosection-style-inline-css'>
+        .wp-block-create-block-herosection {
+            background-color: #21759b;
+            color: #fff;
+            padding: 2px
+        }
+
+        /*# sourceURL=https://evoluirsempre.site/wp-content/themes/hostinger-blog/build/components/blocks/herosection/style-index.css */
+    </style>
+    <style id='theme-blocks-featuredpost-style-inline-css'>
+        .wp-block-create-block-featuredpost {
+            background-color: #21759b;
+            color: #fff;
+            padding: 2px
+        }
+
+        /*# sourceURL=https://evoluirsempre.site/wp-content/themes/hostinger-blog/build/components/blocks/featuredpost/style-index.css */
+    </style>
+    <style id='theme-blocks-latestposts-style-inline-css'>
+        .wp-block-create-block-latestposts {
+            background-color: #21759b;
+            color: #fff;
+            padding: 2px
+        }
+
+        /*# sourceURL=https://evoluirsempre.site/wp-content/themes/hostinger-blog/build/components/blocks/latestposts/style-index.css */
+    </style>
+    <style id='theme-blocks-newsletter-form-style-inline-css'>
+        .wp-block-create-block-latestposts {
+            background-color: #21759b;
+            color: #fff;
+            padding: 2px
+        }
+
+        /*# sourceURL=https://evoluirsempre.site/wp-content/themes/hostinger-blog/build/components/blocks/newsletter/style-index.css */
+    </style>
+    <style id='theme-blocks-aboutsection-style-inline-css'>
+        .hts-about-type-3 .hts-section.hts-about .hts-about-body {
+            text-align: center;
+            width: 100%
+        }
+
+        .hts-about-type-3 .hts-section.hts-about .hts-about-header .hts-about-header-content img {
+            border-radius: 0
+        }
+
+        .hts-about-type-3 .hts-section.hts-about>hr {
+            display: none
+        }
+
+        .hts-about-type-3 .hts-section.hts-about .hts-details {
+            margin-top: 96px
+        }
+
+        .hts-about-type-3 .hts-section.hts-about .hts-details .hts-gallery img {
+            border-radius: 0
+        }
+
+        .hts-about-type-2 .hts-main {
+            margin: 0 auto;
+            max-width: unset
+        }
+
+        .hts-about-type-2 .hts-section.hts-about {
+            border: 0;
+            margin: 0 auto 96px 0;
+            max-width: unset;
+            padding: 0
+        }
+
+        .hts-about-type-2 .hts-section.hts-about>hr {
+            display: none
+        }
+
+        .hts-about-type-2 .hts-section.hts-about .hts-details {
+            margin-top: 96px;
+            padding: 0 24px
+        }
+
+        .hts-about-type-2 .hts-section.hts-about .hts-details .hts-gallery img {
+            border-radius: 0
+        }
+
+        .hts-about-type-2 .hts-section.hts-about .hts-about-header {
+            background-color: var(--grey-light);
+            margin: 0 auto
+        }
+
+        .hts-about-type-2 .hts-section.hts-about .hts-about-header .hts-about-header-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            margin: 0 auto;
+            max-width: var(--view-width);
+            grid-column-gap: 30px;
+            padding: 88px 24px
+        }
+
+        @media screen and (max-width:576px) {
+            .hts-about-type-2 .hts-section.hts-about .hts-about-header .hts-about-header-content {
+                grid-template-columns: 1fr;
+                padding-bottom: 0
+            }
+        }
+
+        .hts-about-type-2 .hts-section.hts-about .hts-about-header .hts-about-header-content .hts-about-body,
+        .hts-about-type-2 .hts-section.hts-about .hts-about-header .hts-about-header-content img {
+            border-radius: 0;
+            margin: auto 0;
+            width: 100%
+        }
+
+        .hts-section.hts-about {
+            margin: 96px auto
+        }
+
+        .hts-section.hts-about .hts-about-header .hts-about-header-content img {
+            border-radius: 16px;
+            margin: auto 0;
+            width: 100%
+        }
+
+        .hts-section.hts-about .hts-details {
+            margin: 0 auto;
+            max-width: var(--view-width)
+        }
+
+        .hts-section.hts-about .hts-about-body {
+            width: 60%
+        }
+
+        .hts-section.hts-about .hts-about-body h1 {
+            margin-bottom: 24px
+        }
+
+        .hts-section.hts-about .hts-about-body p {
+            margin-bottom: 48px
+        }
+
+        @media screen and (max-width:576px) {
+            .hts-section.hts-about .hts-about-body {
+                width: 100%
+            }
+        }
+
+        .hts-section.hts-about .hts-about-story {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-column-gap: 30px
+        }
+
+        @media screen and (max-width:576px) {
+            .hts-section.hts-about .hts-about-story {
+                grid-template-columns: 1fr
+            }
+            .hts-section.hts-about .hts-about-story .hts-description {
+                margin-top: 40px
+            }
+        }
+
+        .hts-section.hts-about .hts-skills>.hts-title {
+            margin-bottom: 40px
+        }
+
+        .hts-section.hts-about .hts-skills .hts-skills-content {
+            display: flex;
+            flex-direction: row;
+            gap: 30px
+        }
+
+        @media screen and (max-width:576px) {
+            .hts-section.hts-about .hts-skills .hts-skills-content {
+                flex-direction: column
+            }
+        }
+
+        /*# sourceURL=https://evoluirsempre.site/wp-content/themes/hostinger-blog/build/components/blocks/aboutsection/style-index.css */
+    </style>
+    <style id='theme-blocks-disclaimersection-style-inline-css'>
+        .hts-disclaimer>div {
+            width: 70%
+        }
+
+        .hts-disclaimer .hts-header {
+            margin-top: 96px
+        }
+
+        .hts-disclaimer .hts-details {
+            margin-bottom: 96px
+        }
+
+        .hts-disclaimer p {
+            margin-bottom: 16px
+        }
+
+        @media screen and (max-width:700px) {
+            .hts-disclaimer>div {
+                width: 100%
+            }
+            .hts-disclaimer .hts-header {
+                margin-top: 64px
+            }
+            .hts-disclaimer .hts-details {
+                margin-bottom: 64px
+            }
+        }
+
+        /*# sourceURL=https://evoluirsempre.site/wp-content/themes/hostinger-blog/build/components/blocks/disclaimersection/style-index.css */
+    </style>
+    <style id='theme-blocks-contact-form-style-inline-css'>
+        .wp-block-create-block-latestposts {
+            background-color: #21759b;
+            color: #fff;
+            padding: 2px
+        }
+
+        /*# sourceURL=https://evoluirsempre.site/wp-content/themes/hostinger-blog/build/components/blocks/contactform/style-index.css */
+    </style>
+    <style id='global-styles-inline-css'>
+        :root {
+            --wp--preset--aspect-ratio--square: 1;
+            --wp--preset--aspect-ratio--4-3: 4/3;
+            --wp--preset--aspect-ratio--3-4: 3/4;
+            --wp--preset--aspect-ratio--3-2: 3/2;
+            --wp--preset--aspect-ratio--2-3: 2/3;
+            --wp--preset--aspect-ratio--16-9: 16/9;
+            --wp--preset--aspect-ratio--9-16: 9/16;
+            --wp--preset--color--black: #000000;
+            --wp--preset--color--cyan-bluish-gray: #abb8c3;
+            --wp--preset--color--white: #ffffff;
+            --wp--preset--color--pale-pink: #f78da7;
+            --wp--preset--color--vivid-red: #cf2e2e;
+            --wp--preset--color--luminous-vivid-orange: #ff6900;
+            --wp--preset--color--luminous-vivid-amber: #fcb900;
+            --wp--preset--color--light-green-cyan: #7bdcb5;
+            --wp--preset--color--vivid-green-cyan: #00d084;
+            --wp--preset--color--pale-cyan-blue: #8ed1fc;
+            --wp--preset--color--vivid-cyan-blue: #0693e3;
+            --wp--preset--color--vivid-purple: #9b51e0;
+            --wp--preset--color--main-primary: #6936F5;
+            --wp--preset--color--main-primary-dark: #4f2eeb;
+            --wp--preset--color--main-dark: #36344D;
+            --wp--preset--color--main-light: #FFFFFF;
+            --wp--preset--color--main-grey: #727586;
+            --wp--preset--color--grey-lighter: #DADCE0;
+            --wp--preset--color--grey-light: #F2F3F6;
+            --wp--preset--color--transparent: transparent;
+            --wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg, rgb(6, 147, 227) 0%, rgb(155, 81, 224) 100%);
+            --wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg, rgb(122, 220, 180) 0%, rgb(0, 208, 130) 100%);
+            --wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg, rgb(252, 185, 0) 0%, rgb(255, 105, 0) 100%);
+            --wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg, rgb(255, 105, 0) 0%, rgb(207, 46, 46) 100%);
+            --wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg, rgb(238, 238, 238) 0%, rgb(169, 184, 195) 100%);
+            --wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg, rgb(74, 234, 220) 0%, rgb(151, 120, 209) 20%, rgb(207, 42, 186) 40%, rgb(238, 44, 130) 60%, rgb(251, 105, 98) 80%, rgb(254, 248, 76) 100%);
+            --wp--preset--gradient--blush-light-purple: linear-gradient(135deg, rgb(255, 206, 236) 0%, rgb(152, 150, 240) 100%);
+            --wp--preset--gradient--blush-bordeaux: linear-gradient(135deg, rgb(254, 205, 165) 0%, rgb(254, 45, 45) 50%, rgb(107, 0, 62) 100%);
+            --wp--preset--gradient--luminous-dusk: linear-gradient(135deg, rgb(255, 203, 112) 0%, rgb(199, 81, 192) 50%, rgb(65, 88, 208) 100%);
+            --wp--preset--gradient--pale-ocean: linear-gradient(135deg, rgb(255, 245, 203) 0%, rgb(182, 227, 212) 50%, rgb(51, 167, 181) 100%);
+            --wp--preset--gradient--electric-grass: linear-gradient(135deg, rgb(202, 248, 128) 0%, rgb(113, 206, 126) 100%);
+            --wp--preset--gradient--midnight: linear-gradient(135deg, rgb(2, 3, 129) 0%, rgb(40, 116, 252) 100%);
+            --wp--preset--gradient--primary-white: linear-gradient(#0073aa 49.9%, #fff 50%);
+            --wp--preset--gradient--white-primary: linear-gradient(#fff 49.9%, #0073aa 50%);
+            --wp--preset--font-size--small: 1.125rem;
+            --wp--preset--font-size--medium: clamp(1.25rem, 1.25rem + ((1vw - 0.2rem) * 0.357), 1.5rem);
+            --wp--preset--font-size--large: clamp(1.75rem, 1.75rem + ((1vw - 0.2rem) * 0.357), 2rem);
+            --wp--preset--font-size--x-large: clamp(2.5rem, 2.5rem + ((1vw - 0.2rem) * 0.357), 2.75rem);
+            --wp--preset--font-size--extra-small: 1rem;
+            --wp--preset--font-size--xx-large: clamp(3rem, 3rem + ((1vw - 0.2rem) * 1.071), 3.75rem);
+            --wp--preset--font-family--inter: Inter, sans-serif;
+            --wp--preset--spacing--20: 0.44rem;
+            --wp--preset--spacing--30: 0.67rem;
+            --wp--preset--spacing--40: 1rem;
+            --wp--preset--spacing--50: 1.5rem;
+            --wp--preset--spacing--60: 2.25rem;
+            --wp--preset--spacing--70: 3.38rem;
+            --wp--preset--spacing--80: 5.06rem;
+            --wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);
+            --wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);
+            --wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);
+            --wp--preset--shadow--outlined: 6px 6px 0px -3px rgb(255, 255, 255), 6px 6px rgb(0, 0, 0);
+            --wp--preset--shadow--crisp: 6px 6px 0px rgb(0, 0, 0);
+        }
+
+        :root {
+            --wp--style--global--content-size: 1110px;
+            --wp--style--global--wide-size: 1440px;
+        }
+
+        :where(body) {
+            margin: 0;
+        }
+
+        .wp-site-blocks {
+            padding-top: var(--wp--style--root--padding-top);
+            padding-bottom: var(--wp--style--root--padding-bottom);
+        }
+
+        .has-global-padding {
+            padding-right: var(--wp--style--root--padding-right);
+            padding-left: var(--wp--style--root--padding-left);
+        }
+
+        .has-global-padding>.alignfull {
+            margin-right: calc(var(--wp--style--root--padding-right) * -1);
+            margin-left: calc(var(--wp--style--root--padding-left) * -1);
+        }
+
+        .has-global-padding :where(:not(.alignfull.is-layout-flow) > .has-global-padding:not(.wp-block-block, .alignfull)) {
+            padding-right: 0;
+            padding-left: 0;
+        }
+
+        .has-global-padding :where(:not(.alignfull.is-layout-flow) > .has-global-padding:not(.wp-block-block, .alignfull))>.alignfull {
+            margin-left: 0;
+            margin-right: 0;
+        }
+
+        .wp-site-blocks>.alignleft {
+            float: left;
+            margin-right: 2em;
+        }
+
+        .wp-site-blocks>.alignright {
+            float: right;
+            margin-left: 2em;
+        }
+
+        .wp-site-blocks>.aligncenter {
+            justify-content: center;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        :where(.wp-site-blocks)>* {
+            margin-block-start: 24px;
+            margin-block-end: 0;
+        }
+
+        :where(.wp-site-blocks)> :first-child {
+            margin-block-start: 0;
+        }
+
+        :where(.wp-site-blocks)> :last-child {
+            margin-block-end: 0;
+        }
+
+        :root {
+            --wp--style--block-gap: 24px;
+        }
+
+        :root :where(.is-layout-flow)> :first-child {
+            margin-block-start: 0;
+        }
+
+        :root :where(.is-layout-flow)> :last-child {
+            margin-block-end: 0;
+        }
+
+        :root :where(.is-layout-flow)>* {
+            margin-block-start: 24px;
+            margin-block-end: 0;
+        }
+
+        :root :where(.is-layout-constrained)> :first-child {
+            margin-block-start: 0;
+        }
+
+        :root :where(.is-layout-constrained)> :last-child {
+            margin-block-end: 0;
+        }
+
+        :root :where(.is-layout-constrained)>* {
+            margin-block-start: 24px;
+            margin-block-end: 0;
+        }
+
+        :root :where(.is-layout-flex) {
+            gap: 24px;
+        }
+
+        :root :where(.is-layout-grid) {
+            gap: 24px;
+        }
+
+        .is-layout-flow>.alignleft {
+            float: left;
+            margin-inline-start: 0;
+            margin-inline-end: 2em;
+        }
+
+        .is-layout-flow>.alignright {
+            float: right;
+            margin-inline-start: 2em;
+            margin-inline-end: 0;
+        }
+
+        .is-layout-flow>.aligncenter {
+            margin-left: auto !important;
+            margin-right: auto !important;
+        }
+
+        .is-layout-constrained>.alignleft {
+            float: left;
+            margin-inline-start: 0;
+            margin-inline-end: 2em;
+        }
+
+        .is-layout-constrained>.alignright {
+            float: right;
+            margin-inline-start: 2em;
+            margin-inline-end: 0;
+        }
+
+        .is-layout-constrained>.aligncenter {
+            margin-left: auto !important;
+            margin-right: auto !important;
+        }
+
+        .is-layout-constrained> :where(:not(.alignleft):not(.alignright):not(.alignfull)) {
+            max-width: var(--wp--style--global--content-size);
+            margin-left: auto !important;
+            margin-right: auto !important;
+        }
+
+        .is-layout-constrained>.alignwide {
+            max-width: var(--wp--style--global--wide-size);
+        }
+
+        body .is-layout-flex {
+            display: flex;
+        }
+
+        .is-layout-flex {
+            flex-wrap: wrap;
+            align-items: center;
+        }
+
+        .is-layout-flex> :is(*, div) {
+            margin: 0;
+        }
+
+        body .is-layout-grid {
+            display: grid;
+        }
+
+        .is-layout-grid> :is(*, div) {
+            margin: 0;
+        }
+
+        body {
+            background-color: var(--wp--preset--color--main-light);
+            color: var(--wp--preset--color--main-dark);
+            font-family: var(--wp--preset--font-family--system);
+            font-size: var(--wp--preset--font-size--medium);
+            line-height: 1.75;
+            --wp--style--root--padding-top: 0px;
+            --wp--style--root--padding-right: var(--wp--preset--spacing--50);
+            --wp--style--root--padding-bottom: 0px;
+            --wp--style--root--padding-left: var(--wp--preset--spacing--50);
+        }
+
+        a:where(:not(.wp-element-button)) {
+            text-decoration: underline;
+        }
+
+        :root :where(.wp-element-button, .wp-block-button__link) {
+            background-color: #32373c;
+            border-width: 0;
+            color: #fff;
+            font-family: inherit;
+            font-size: inherit;
+            font-style: inherit;
+            font-weight: inherit;
+            letter-spacing: inherit;
+            line-height: inherit;
+            padding-top: calc(0.667em + 2px);
+            padding-right: calc(1.333em + 2px);
+            padding-bottom: calc(0.667em + 2px);
+            padding-left: calc(1.333em + 2px);
+            text-decoration: none;
+            text-transform: inherit;
+        }
+
+        .has-black-color {
+            color: var(--wp--preset--color--black) !important;
+        }
+
+        .has-cyan-bluish-gray-color {
+            color: var(--wp--preset--color--cyan-bluish-gray) !important;
+        }
+
+        .has-white-color {
+            color: var(--wp--preset--color--white) !important;
+        }
+
+        .has-pale-pink-color {
+            color: var(--wp--preset--color--pale-pink) !important;
+        }
+
+        .has-vivid-red-color {
+            color: var(--wp--preset--color--vivid-red) !important;
+        }
+
+        .has-luminous-vivid-orange-color {
+            color: var(--wp--preset--color--luminous-vivid-orange) !important;
+        }
+
+        .has-luminous-vivid-amber-color {
+            color: var(--wp--preset--color--luminous-vivid-amber) !important;
+        }
+
+        .has-light-green-cyan-color {
+            color: var(--wp--preset--color--light-green-cyan) !important;
+        }
+
+        .has-vivid-green-cyan-color {
+            color: var(--wp--preset--color--vivid-green-cyan) !important;
+        }
+
+        .has-pale-cyan-blue-color {
+            color: var(--wp--preset--color--pale-cyan-blue) !important;
+        }
+
+        .has-vivid-cyan-blue-color {
+            color: var(--wp--preset--color--vivid-cyan-blue) !important;
+        }
+
+        .has-vivid-purple-color {
+            color: var(--wp--preset--color--vivid-purple) !important;
+        }
+
+        .has-main-primary-color {
+            color: var(--wp--preset--color--main-primary) !important;
+        }
+
+        .has-main-primary-dark-color {
+            color: var(--wp--preset--color--main-primary-dark) !important;
+        }
+
+        .has-main-dark-color {
+            color: var(--wp--preset--color--main-dark) !important;
+        }
+
+        .has-main-light-color {
+            color: var(--wp--preset--color--main-light) !important;
+        }
+
+        .has-main-grey-color {
+            color: var(--wp--preset--color--main-grey) !important;
+        }
+
+        .has-grey-lighter-color {
+            color: var(--wp--preset--color--grey-lighter) !important;
+        }
+
+        .has-grey-light-color {
+            color: var(--wp--preset--color--grey-light) !important;
+        }
+
+        .has-transparent-color {
+            color: var(--wp--preset--color--transparent) !important;
+        }
+
+        .has-black-background-color {
+            background-color: var(--wp--preset--color--black) !important;
+        }
+
+        .has-cyan-bluish-gray-background-color {
+            background-color: var(--wp--preset--color--cyan-bluish-gray) !important;
+        }
+
+        .has-white-background-color {
+            background-color: var(--wp--preset--color--white) !important;
+        }
+
+        .has-pale-pink-background-color {
+            background-color: var(--wp--preset--color--pale-pink) !important;
+        }
+
+        .has-vivid-red-background-color {
+            background-color: var(--wp--preset--color--vivid-red) !important;
+        }
+
+        .has-luminous-vivid-orange-background-color {
+            background-color: var(--wp--preset--color--luminous-vivid-orange) !important;
+        }
+
+        .has-luminous-vivid-amber-background-color {
+            background-color: var(--wp--preset--color--luminous-vivid-amber) !important;
+        }
+
+        .has-light-green-cyan-background-color {
+            background-color: var(--wp--preset--color--light-green-cyan) !important;
+        }
+
+        .has-vivid-green-cyan-background-color {
+            background-color: var(--wp--preset--color--vivid-green-cyan) !important;
+        }
+
+        .has-pale-cyan-blue-background-color {
+            background-color: var(--wp--preset--color--pale-cyan-blue) !important;
+        }
+
+        .has-vivid-cyan-blue-background-color {
+            background-color: var(--wp--preset--color--vivid-cyan-blue) !important;
+        }
+
+        .has-vivid-purple-background-color {
+            background-color: var(--wp--preset--color--vivid-purple) !important;
+        }
+
+        .has-main-primary-background-color {
+            background-color: var(--wp--preset--color--main-primary) !important;
+        }
+
+        .has-main-primary-dark-background-color {
+            background-color: var(--wp--preset--color--main-primary-dark) !important;
+        }
+
+        .has-main-dark-background-color {
+            background-color: var(--wp--preset--color--main-dark) !important;
+        }
+
+        .has-main-light-background-color {
+            background-color: var(--wp--preset--color--main-light) !important;
+        }
+
+        .has-main-grey-background-color {
+            background-color: var(--wp--preset--color--main-grey) !important;
+        }
+
+        .has-grey-lighter-background-color {
+            background-color: var(--wp--preset--color--grey-lighter) !important;
+        }
+
+        .has-grey-light-background-color {
+            background-color: var(--wp--preset--color--grey-light) !important;
+        }
+
+        .has-transparent-background-color {
+            background-color: var(--wp--preset--color--transparent) !important;
+        }
+
+        .has-black-border-color {
+            border-color: var(--wp--preset--color--black) !important;
+        }
+
+        .has-cyan-bluish-gray-border-color {
+            border-color: var(--wp--preset--color--cyan-bluish-gray) !important;
+        }
+
+        .has-white-border-color {
+            border-color: var(--wp--preset--color--white) !important;
+        }
+
+        .has-pale-pink-border-color {
+            border-color: var(--wp--preset--color--pale-pink) !important;
+        }
+
+        .has-vivid-red-border-color {
+            border-color: var(--wp--preset--color--vivid-red) !important;
+        }
+
+        .has-luminous-vivid-orange-border-color {
+            border-color: var(--wp--preset--color--luminous-vivid-orange) !important;
+        }
+
+        .has-luminous-vivid-amber-border-color {
+            border-color: var(--wp--preset--color--luminous-vivid-amber) !important;
+        }
+
+        .has-light-green-cyan-border-color {
+            border-color: var(--wp--preset--color--light-green-cyan) !important;
+        }
+
+        .has-vivid-green-cyan-border-color {
+            border-color: var(--wp--preset--color--vivid-green-cyan) !important;
+        }
+
+        .has-pale-cyan-blue-border-color {
+            border-color: var(--wp--preset--color--pale-cyan-blue) !important;
+        }
+
+        .has-vivid-cyan-blue-border-color {
+            border-color: var(--wp--preset--color--vivid-cyan-blue) !important;
+        }
+
+        .has-vivid-purple-border-color {
+            border-color: var(--wp--preset--color--vivid-purple) !important;
+        }
+
+        .has-main-primary-border-color {
+            border-color: var(--wp--preset--color--main-primary) !important;
+        }
+
+        .has-main-primary-dark-border-color {
+            border-color: var(--wp--preset--color--main-primary-dark) !important;
+        }
+
+        .has-main-dark-border-color {
+            border-color: var(--wp--preset--color--main-dark) !important;
+        }
+
+        .has-main-light-border-color {
+            border-color: var(--wp--preset--color--main-light) !important;
+        }
+
+        .has-main-grey-border-color {
+            border-color: var(--wp--preset--color--main-grey) !important;
+        }
+
+        .has-grey-lighter-border-color {
+            border-color: var(--wp--preset--color--grey-lighter) !important;
+        }
+
+        .has-grey-light-border-color {
+            border-color: var(--wp--preset--color--grey-light) !important;
+        }
+
+        .has-transparent-border-color {
+            border-color: var(--wp--preset--color--transparent) !important;
+        }
+
+        .has-vivid-cyan-blue-to-vivid-purple-gradient-background {
+            background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;
+        }
+
+        .has-light-green-cyan-to-vivid-green-cyan-gradient-background {
+            background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;
+        }
+
+        .has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background {
+            background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;
+        }
+
+        .has-luminous-vivid-orange-to-vivid-red-gradient-background {
+            background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;
+        }
+
+        .has-very-light-gray-to-cyan-bluish-gray-gradient-background {
+            background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;
+        }
+
+        .has-cool-to-warm-spectrum-gradient-background {
+            background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;
+        }
+
+        .has-blush-light-purple-gradient-background {
+            background: var(--wp--preset--gradient--blush-light-purple) !important;
+        }
+
+        .has-blush-bordeaux-gradient-background {
+            background: var(--wp--preset--gradient--blush-bordeaux) !important;
+        }
+
+        .has-luminous-dusk-gradient-background {
+            background: var(--wp--preset--gradient--luminous-dusk) !important;
+        }
+
+        .has-pale-ocean-gradient-background {
+            background: var(--wp--preset--gradient--pale-ocean) !important;
+        }
+
+        .has-electric-grass-gradient-background {
+            background: var(--wp--preset--gradient--electric-grass) !important;
+        }
+
+        .has-midnight-gradient-background {
+            background: var(--wp--preset--gradient--midnight) !important;
+        }
+
+        .has-primary-white-gradient-background {
+            background: var(--wp--preset--gradient--primary-white) !important;
+        }
+
+        .has-white-primary-gradient-background {
+            background: var(--wp--preset--gradient--white-primary) !important;
+        }
+
+        .has-small-font-size {
+            font-size: var(--wp--preset--font-size--small) !important;
+        }
+
+        .has-medium-font-size {
+            font-size: var(--wp--preset--font-size--medium) !important;
+        }
+
+        .has-large-font-size {
+            font-size: var(--wp--preset--font-size--large) !important;
+        }
+
+        .has-x-large-font-size {
+            font-size: var(--wp--preset--font-size--x-large) !important;
+        }
+
+        .has-extra-small-font-size {
+            font-size: var(--wp--preset--font-size--extra-small) !important;
+        }
+
+        .has-xx-large-font-size {
+            font-size: var(--wp--preset--font-size--xx-large) !important;
+        }
+
+        .has-inter-font-family {
+            font-family: var(--wp--preset--font-family--inter) !important;
+        }
+
+        :root :where(.wp-block-pullquote) {
+            font-size: 1.5em;
+            line-height: 1.6;
+        }
+
+        :root :where(.wp-block-code) {
+            color: var(--wp--preset--color--contrast);
+        }
+
+        :root :where(.wp-block-comment-author-name) {
+            font-size: var(--wp--preset--font-size--small);
+        }
+
+        :root :where(.wp-block-comment-date) {
+            font-size: var(--wp--preset--font-size--small);
+        }
+
+        :root :where(.wp-block-comment-edit-link) {
+            font-size: var(--wp--preset--font-size--small);
+        }
+
+        :root :where(.wp-block-comment-reply-link) {
+            font-size: var(--wp--preset--font-size--small);
+        }
+
+        :root :where(.wp-block-navigation) {
+            font-size: var(--wp--preset--font-size--medium);
+            font-weight: 700;
+        }
+
+        :root :where(.wp-block-navigation a:where(:not(.wp-element-button))) {
+            color: var(--wp--preset--color--main-dark);
+            text-decoration: underline;
+        }
+
+        :root :where(.wp-block-navigation a:where(:not(.wp-element-button)):hover) {
+            color: var(--wp--preset--color--main-primary-dark);
+            text-decoration: none;
+        }
+
+        :root :where(.wp-block-navigation a:where(:not(.wp-element-button)):focus) {
+            color: var(--wp--preset--color--main-primary-dark);
+        }
+
+        :root :where(.wp-block-navigation a:where(:not(.wp-element-button)):active) {
+            color: var(--wp--preset--color--main-primary-dark);
+        }
+
+        :root :where(.wp-block-post-author) {
+            font-size: var(--wp--preset--font-size--extra-small);
+        }
+
+        :root :where(.wp-block-post-date) {
+            font-size: var(--wp--preset--font-size--extra-small);
+        }
+
+        :root :where(.wp-block-post-navigation-link) {
+            font-weight: 700;
+        }
+
+        :root :where(.wp-block-post-terms) {
+            font-size: var(--wp--preset--font-size--extra-small);
+        }
+
+        :root :where(.wp-block-post-title) {
+            font-size: var(--wp--preset--font-size--x-large);
+        }
+
+        :root :where(.wp-block-query-pagination) {
+            font-weight: 700;
+        }
+
+        :root :where(.wp-block-query-title) {
+            font-size: var(--wp--preset--font-size--x-large);
+        }
+
+        :root :where(.wp-block-site-title) {
+            font-size: var(--wp--preset--font-size--medium);
+        }
+
+        /*# sourceURL=global-styles-inline-css */
+    </style>
+    <link rel='stylesheet' id='hostinger-blog-theme-style-css' href='https://evoluirsempre.site/wp-content/themes/hostinger-blog/build/styles/main.css?ver=1.4.13' media='all' />
+    <link rel='stylesheet' id='elementor-frontend-css' href='https://evoluirsempre.site/wp-content/plugins/elementor/assets/css/frontend.min.css?ver=4.0.1' media='all' />
+    <link rel='stylesheet' id='elementor-post-16-css' href='https://evoluirsempre.site/wp-content/uploads/elementor/css/post-16.css?ver=1776059497' media='all' />
+    <link rel='stylesheet' id='elementor-post-2956-css' href='https://evoluirsempre.site/wp-content/uploads/elementor/css/post-2956.css?ver=1776812287' media='all' />
+    <link rel='stylesheet' id='elementor-gf-local-roboto-css' href='https://evoluirsempre.site/wp-content/uploads/elementor/google-fonts/css/roboto.css?ver=1744300149' media='all' />
+    <link rel='stylesheet' id='elementor-gf-local-robotoslab-css' href='https://evoluirsempre.site/wp-content/uploads/elementor/google-fonts/css/robotoslab.css?ver=1744300154' media='all' />
+    <template id="6qbKVzhlcHRkFMGITgDG"></template>
+    <template id="MdH433CSeQTqpULM9Muw"></template>
+    <link rel="https://api.w.org/" href="https://evoluirsempre.site/wp-json/" />
+    <link rel="alternate" title="JSON" type="application/json" href="https://evoluirsempre.site/wp-json/wp/v2/pages/2956" />
+    <link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://evoluirsempre.site/xmlrpc.php?rsd" />
+
+    <link rel="canonical" href="https://evoluirsempre.site/receitas-zero1/" />
+    <link rel='shortlink' href='https://evoluirsempre.site/?p=2956' />
+    <script type="bv_inline_delayed_js" bv_unique_id="Y1LvdEqII35mCaL0Xodv" defer="1" data-cfasync="" async="">!function(i,n){i._plt=i._plt||(n&&n.timeOrigin?n.timeOrigin+n.now():Date.now())}(window,performance);</script>
+    <link rel="preload" href="https://scripts.converteai.net/eac02b3c-8e67-4d0d-8c44-404af62a35a2/players/69d082be9a320eec063905dd/v4/player.js" as="script">
+    <link rel="preload" href="https://scripts.converteai.net/lib/js/smartplayer-wc/v4/smartplayer.js" as="script">
+    <link rel="preload" href="https://cdn.converteai.net/eac02b3c-8e67-4d0d-8c44-404af62a35a2/69d08279cb0bd8b4884cd72a/main.m3u8" as="fetch">
+    <link rel="dns-prefetch" href="https://cdn.converteai.net">
+    <link rel="dns-prefetch" href="https://scripts.converteai.net">
+    <link rel="dns-prefetch" href="https://images.converteai.net">
+    <link rel="dns-prefetch" href="https://api.vturb.com.br">
+    <style>
+        :root {
+            --main-primary: #6936F5;
+            --main-dark: #36344D;
+            --main-light: #FFFFFF;
+            --grey-main: #727586;
+            --grey-lighter: #DADCE0;
+            --grey-light: #F2F3F6;
+            --red: #FF0000;
+            --max-width: 1400px;
+            --view-width: 1158px;
+            --border: #DADCE0;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+
+        p {
+            font-weight: 400;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-weight: 700;
+        }
+    </style>
+
+    <style>
+        .e-con.e-parent:nth-of-type(n+4):not(.e-lazyloaded):not(.e-no-lazyload),
+        .e-con.e-parent:nth-of-type(n+4):not(.e-lazyloaded):not(.e-no-lazyload) * {
+            background-image: none !important;
+        }
+
+        @media screen and (max-height: 1024px) {
+            .e-con.e-parent:nth-of-type(n+3):not(.e-lazyloaded):not(.e-no-lazyload),
+            .e-con.e-parent:nth-of-type(n+3):not(.e-lazyloaded):not(.e-no-lazyload) * {
+                background-image: none !important;
+            }
+        }
+
+        @media screen and (max-height: 640px) {
+            .e-con.e-parent:nth-of-type(n+2):not(.e-lazyloaded):not(.e-no-lazyload),
+            .e-con.e-parent:nth-of-type(n+2):not(.e-lazyloaded):not(.e-no-lazyload) * {
+                background-image: none !important;
+            }
+        }
+    </style>
+    <link rel="icon" href="https://evoluirsempre.site/wp-content/uploads/2026/03/cropped-cropped-a099b9f7-2dda-45b4-8f97-d29b25cb3527-removebg-preview-32x32.png" sizes="32x32" />
+    <link rel="icon" href="https://evoluirsempre.site/wp-content/uploads/2026/03/cropped-cropped-a099b9f7-2dda-45b4-8f97-d29b25cb3527-removebg-preview-192x192.png" sizes="192x192" />
+    <link rel="apple-touch-icon" href="https://evoluirsempre.site/wp-content/uploads/2026/03/cropped-cropped-a099b9f7-2dda-45b4-8f97-d29b25cb3527-removebg-preview-180x180.png" />
+
+</head>
+
+<body class="wp-singular page-template page-template-elementor_canvas page page-id-2956 wp-custom-logo wp-theme-hostinger-blog hts-body elementor-default elementor-template-canvas elementor-kit-16 elementor-page elementor-page-2956">
+    <div data-elementor-type="wp-page" data-elementor-id="2956" class="elementor elementor-2956" data-elementor-post-type="page">
+        <section class="elementor-section elementor-top-section elementor-element elementor-element-329c121a elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="329c121a" data-element_type="section" data-e-type="section">
+            <div class="elementor-container elementor-column-gap-default">
+                <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-5c979fb" data-id="5c979fb" data-element_type="column" data-e-type="column">
+                    <div class="elementor-widget-wrap elementor-element-populated">
+                        <div class="elementor-element elementor-element-22c1d0ad elementor-widget elementor-widget-html" data-id="22c1d0ad" data-element_type="widget" data-e-type="widget" data-widget_type="html.default">
+                            <template id="KDRRVhFDHgFSV8soPIeH"></template> </div>
+                        <div class="elementor-element elementor-element-04b2e4f elementor-widget elementor-widget-html" data-id="04b2e4f" data-element_type="widget" data-e-type="widget" data-widget_type="html.default">
+                            <script type="bv_inline_delayed_js" bv_unique_id="EyqLUmYd9zEZ8cQGTvE7" defer="1" data-cfasync="" async="">window.pixelId = "69bf7cdac5567c95b9570e92"; var a = document.createElement("script"); a.setAttribute("async", ""); a.setAttribute("defer", ""); a.setAttribute("src", "https://cdn.utmify.com.br/scripts/pixel/pixel.js"); document.head.appendChild(a);
+                            </script>
+                        </div>
+                        <div class="elementor-element elementor-element-b0c2e1f elementor-widget elementor-widget-html" data-id="b0c2e1f" data-element_type="widget" data-e-type="widget" data-widget_type="html.default">
+                            <script type="bv_inline_delayed_js" bv_unique_id="g3or0DOUFPyQmLO0Jhya" defer="1" data-cfasync="" async="">window.pixelId = "69c0c652af9281fe3264e835"; var a = document.createElement("script"); a.setAttribute("async", ""); a.setAttribute("defer", ""); a.setAttribute("src", "https://cdn.utmify.com.br/scripts/pixel/pixel.js"); document.head.appendChild(a);
+                            </script>
+                        </div>
+                        <div class="elementor-element elementor-element-59b2f7f2 elementor-widget elementor-widget-html" data-id="59b2f7f2" data-element_type="widget" data-e-type="widget" data-widget_type="html.default">
+                            <!DOCTYPE html>
+                            <html lang="pt-BR">
+
+                            <head>
+
+
+
+
+                                <title>Receitas Zero Açúcar e Zero Glúten — Chef Luiza Costa</title>
+                                <link rel="preconnect" href="https://fonts.googleapis.com">
+                                <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+                                <style>
+                                    *,
+                                    *::before,
+                                    *::after {
+                                        box-sizing: border-box;
+                                        margin: 0;
+                                        padding: 0;
+                                    }
+
+                                    :root {
+                                        --red: #c0392b;
+                                        --red-dark: #922b21;
+                                        --red-light: #f9ebea;
+                                        --amber: #d48b2f;
+                                        --amber-light: #fef9ee;
+                                        --amber-mid: #fdebd0;
+                                        --green: #1e8449;
+                                        --green-light: #eafaf1;
+                                        --green-dark: #145a32;
+                                        --text: #1a1a1a;
+                                        --text-muted: #5d6d7e;
+                                        --text-light: #8e9eae;
+                                        --border: #dce3ea;
+                                        --surface: #f7f9fb;
+                                        --white: #ffffff;
+                                    }
+
+                                    body {
+                                        font-family: 'Source Sans 3', sans-serif;
+                                        background: #f2f4f6;
+                                        color: var(--text);
+                                        font-size: 16px;
+                                        line-height: 1.7;
+                                    }
+
+                                    /* TOP BAR */
+
+                                    .top-bar {
+                                        background: var(--red);
+                                        color: #fff;
+                                        text-align: center;
+                                        padding: 10px 16px;
+                                        font-size: 13px;
+                                        font-weight: 700;
+                                        letter-spacing: 0.05em;
+                                    }
+
+                                    .top-bar span {
+                                        background: #fff;
+                                        color: var(--red);
+                                        border-radius: 4px;
+                                        padding: 1px 7px;
+                                        font-size: 11px;
+                                        margin-right: 6px;
+                                        vertical-align: middle;
+                                    }
+
+                                    /* WRAPPER */
+
+                                    .page {
+                                        max-width: 640px;
+                                        margin: 0 auto;
+                                        background: var(--white);
+                                        box-shadow: 0 0 40px rgba(0, 0, 0, 0.1);
+                                    }
+
+                                    /* HERO */
+
+                                    .hero {
+                                        background: linear-gradient(160deg, #fffbf5 0%, #fff8ec 100%);
+                                        border-bottom: 3px solid var(--amber);
+                                        padding: 32px 24px 28px;
+                                        text-align: center;
+                                    }
+
+                                    .eyebrow {
+                                        display: inline-block;
+                                        background: var(--amber-mid);
+                                        color: var(--amber);
+                                        font-size: 12px;
+                                        font-weight: 700;
+                                        letter-spacing: 0.07em;
+                                        text-transform: uppercase;
+                                        padding: 5px 14px;
+                                        border-radius: 50px;
+                                        margin-bottom: 18px;
+                                    }
+
+                                    .hero h1 {
+                                        font-family: 'Playfair Display', serif;
+                                        font-size: 30px;
+                                        font-weight: 900;
+                                        line-height: 1.22;
+                                        color: var(--text);
+                                        margin-bottom: 16px;
+                                    }
+
+                                    .hero h1 em {
+                                        font-style: italic;
+                                        color: var(--red);
+                                    }
+
+                                    .hero-sub {
+                                        font-size: 16px;
+                                        color: var(--text-muted);
+                                        line-height: 1.65;
+                                        margin-bottom: 22px;
+                                        max-width: 520px;
+                                        margin-left: auto;
+                                        margin-right: auto;
+                                    }
+
+                                    .hero-sub strong {
+                                        color: var(--text);
+                                    }
+
+                                    /* VIDEO */
+
+                                    .video-wrap {
+                                        border-radius: 12px;
+                                        overflow: hidden;
+                                        margin-bottom: 22px;
+                                    }
+
+                                    /* SOCIAL PROOF BAR */
+
+                                    .proof-bar {
+                                        background: var(--red-light);
+                                        border: 1px solid #f1948a;
+                                        border-radius: 8px;
+                                        padding: 10px 16px;
+                                        font-size: 13px;
+                                        font-weight: 700;
+                                        color: var(--red-dark);
+                                        margin-bottom: 20px;
+                                        display: flex;
+                                        align-items: center;
+                                        justify-content: center;
+                                        gap: 8px;
+                                    }
+
+                                    .proof-bar .dot {
+                                        width: 8px;
+                                        height: 8px;
+                                        background: var(--red);
+                                        border-radius: 50%;
+                                        animation: pulse 1.5s infinite;
+                                    }
+
+                                    @keyframes pulse {
+                                        0%,
+                                        100% {
+                                            opacity: 1;
+                                        }
+                                        50% {
+                                            opacity: 0.3;
+                                        }
+                                    }
+
+                                    /* PRICE BOX */
+
+                                    .price-box {
+                                        background: var(--amber-light);
+                                        border: 2px solid var(--amber);
+                                        border-radius: 12px;
+                                        padding: 18px;
+                                        margin-bottom: 18px;
+                                        text-align: center;
+                                    }
+
+                                    .price-old {
+                                        font-size: 14px;
+                                        color: var(--text-light);
+                                        text-decoration: line-through;
+                                        margin-bottom: 2px;
+                                    }
+
+                                    .price-new {
+                                        font-size: 38px;
+                                        font-weight: 700;
+                                        color: var(--red);
+                                        line-height: 1;
+                                        margin-bottom: 4px;
+                                    }
+
+                                    .price-new small {
+                                        font-size: 18px;
+                                        font-weight: 600;
+                                    }
+
+                                    .price-note {
+                                        font-size: 12px;
+                                        color: var(--text-muted);
+                                    }
+
+                                    /* CTA BUTTON */
+
+                                    .cta-btn {
+                                        display: block;
+                                        width: 100%;
+                                        background: var(--green);
+                                        color: #fff;
+                                        font-family: 'Source Sans 3', sans-serif;
+                                        font-size: 17px;
+                                        font-weight: 700;
+                                        text-align: center;
+                                        padding: 18px 24px;
+                                        border-radius: 10px;
+                                        text-decoration: none;
+                                        border: none;
+                                        cursor: pointer;
+                                        line-height: 1.3;
+                                        letter-spacing: 0.02em;
+                                        transition: background 0.2s, transform 0.1s;
+                                        margin-bottom: 10px;
+                                    }
+
+                                    .cta-btn:hover {
+                                        background: var(--green-dark);
+                                        transform: translateY(-1px);
+                                    }
+
+                                    .cta-btn:active {
+                                        transform: translateY(0);
+                                    }
+
+                                    .cta-sub {
+                                        font-size: 12px;
+                                        color: var(--text-light);
+                                        text-align: center;
+                                        margin-bottom: 0;
+                                    }
+
+                                    .trust-row {
+                                        display: flex;
+                                        justify-content: center;
+                                        gap: 20px;
+                                        flex-wrap: wrap;
+                                        margin-top: 14px;
+                                    }
+
+                                    .trust-item {
+                                        display: flex;
+                                        align-items: center;
+                                        gap: 5px;
+                                        font-size: 11px;
+                                        color: var(--text-muted);
+                                        font-weight: 600;
+                                    }
+
+                                    .trust-item svg {
+                                        width: 14px;
+                                        height: 14px;
+                                        stroke: var(--green);
+                                        fill: none;
+                                        stroke-width: 2;
+                                    }
+
+                                    /* SECTION */
+
+                                    .section {
+                                        padding: 32px 24px;
+                                        border-top: 1px solid var(--border);
+                                    }
+
+                                    .section-label {
+                                        font-size: 11px;
+                                        font-weight: 700;
+                                        letter-spacing: 0.1em;
+                                        text-transform: uppercase;
+                                        color: var(--amber);
+                                        margin-bottom: 8px;
+                                    }
+
+                                    .section h2 {
+                                        font-family: 'Playfair Display', serif;
+                                        font-size: 24px;
+                                        font-weight: 700;
+                                        line-height: 1.3;
+                                        color: var(--text);
+                                        margin-bottom: 18px;
+                                    }
+
+                                    /* AUTHORITY */
+
+                                    .authority-card {
+                                        display: flex;
+                                        align-items: flex-start;
+                                        gap: 16px;
+                                        background: var(--surface);
+                                        border: 1px solid var(--border);
+                                        border-radius: 12px;
+                                        padding: 18px;
+                                    }
+
+                                    .authority-card img {
+                                        width: 70px;
+                                        height: 70px;
+                                        border-radius: 50%;
+                                        object-fit: cover;
+                                        border: 3px solid var(--amber);
+                                        flex-shrink: 0;
+                                    }
+
+                                    .authority-name {
+                                        font-size: 17px;
+                                        font-weight: 700;
+                                        color: var(--text);
+                                        margin-bottom: 2px;
+                                    }
+
+                                    .authority-role {
+                                        font-size: 12px;
+                                        font-weight: 700;
+                                        color: var(--amber);
+                                        text-transform: uppercase;
+                                        letter-spacing: 0.04em;
+                                        margin-bottom: 8px;
+                                    }
+
+                                    .authority-bio {
+                                        font-size: 14px;
+                                        color: var(--text-muted);
+                                        line-height: 1.6;
+                                    }
+
+                                    /* PAIN */
+
+                                    .pain-list {
+                                        list-style: none;
+                                        display: flex;
+                                        flex-direction: column;
+                                        gap: 12px;
+                                        margin-bottom: 20px;
+                                    }
+
+                                    .pain-item {
+                                        display: flex;
+                                        align-items: flex-start;
+                                        gap: 12px;
+                                        font-size: 15px;
+                                        color: var(--text);
+                                        line-height: 1.5;
+                                    }
+
+                                    .icon-x {
+                                        width: 22px;
+                                        height: 22px;
+                                        background: #fde8e6;
+                                        border-radius: 50%;
+                                        display: flex;
+                                        align-items: center;
+                                        justify-content: center;
+                                        flex-shrink: 0;
+                                        margin-top: 2px;
+                                    }
+
+                                    .icon-x svg {
+                                        width: 10px;
+                                        height: 10px;
+                                        stroke: var(--red);
+                                        fill: none;
+                                        stroke-width: 2.5;
+                                    }
+
+                                    .promise-box {
+                                        background: #fffbf0;
+                                        border-left: 4px solid var(--amber);
+                                        padding: 16px 18px;
+                                        border-radius: 0 8px 8px 0;
+                                        font-size: 15px;
+                                        color: var(--text);
+                                        line-height: 1.65;
+                                    }
+
+                                    /* BREADS */
+
+                                    .breads-grid {
+                                        display: grid;
+                                        grid-template-columns: 1fr 1fr;
+                                        gap: 10px;
+                                        margin-bottom: 16px;
+                                    }
+
+                                    .bread-card {
+                                        background: #fffbf0;
+                                        border: 1.5px solid #f0d9a8;
+                                        border-radius: 10px;
+                                        padding: 14px 12px;
+                                        text-align: center;
+                                    }
+
+                                    .bread-icon {
+                                        font-size: 28px;
+                                        display: block;
+                                        margin-bottom: 6px;
+                                    }
+
+                                    .bread-name {
+                                        font-size: 13px;
+                                        font-weight: 700;
+                                        color: #7d5a1e;
+                                        line-height: 1.3;
+                                    }
+
+                                    .breads-note {
+                                        font-size: 13px;
+                                        color: var(--text-muted);
+                                        text-align: center;
+                                        font-style: italic;
+                                    }
+
+                                    /* BONUS */
+
+                                    .bonus-block {
+                                        background: var(--green-light);
+                                        border: 1.5px solid #a9dfbf;
+                                        border-radius: 12px;
+                                        padding: 20px;
+                                    }
+
+                                    .bonus-title {
+                                        font-size: 13px;
+                                        font-weight: 700;
+                                        color: var(--green-dark);
+                                        text-transform: uppercase;
+                                        letter-spacing: 0.06em;
+                                        margin-bottom: 14px;
+                                    }
+
+                                    .bonus-item {
+                                        display: flex;
+                                        align-items: flex-start;
+                                        gap: 10px;
+                                        font-size: 14px;
+                                        color: var(--text);
+                                        margin-bottom: 10px;
+                                        line-height: 1.5;
+                                    }
+
+                                    .bonus-item:last-child {
+                                        margin-bottom: 0;
+                                    }
+
+                                    .icon-check {
+                                        width: 20px;
+                                        height: 20px;
+                                        background: var(--green);
+                                        border-radius: 50%;
+                                        display: flex;
+                                        align-items: center;
+                                        justify-content: center;
+                                        flex-shrink: 0;
+                                        margin-top: 2px;
+                                    }
+
+                                    .icon-check svg {
+                                        width: 10px;
+                                        height: 10px;
+                                        stroke: #fff;
+                                        fill: none;
+                                        stroke-width: 3;
+                                    }
+
+                                    /* TESTIMONIALS */
+
+                                    .testimonial {
+                                        background: var(--surface);
+                                        border: 1px solid var(--border);
+                                        border-radius: 12px;
+                                        padding: 18px;
+                                        margin-bottom: 12px;
+                                    }
+
+                                    .testimonial:last-of-type {
+                                        margin-bottom: 0;
+                                    }
+
+                                    .stars {
+                                        color: #f39c12;
+                                        font-size: 15px;
+                                        margin-bottom: 8px;
+                                        letter-spacing: 2px;
+                                    }
+
+                                    .testimonial-text {
+                                        font-size: 14px;
+                                        font-style: italic;
+                                        color: var(--text);
+                                        line-height: 1.65;
+                                        margin-bottom: 10px;
+                                    }
+
+                                    .testimonial-footer {
+                                        display: flex;
+                                        align-items: center;
+                                        gap: 10px;
+                                    }
+
+                                    .testimonial-avatar {
+                                        width: 44px;
+                                        height: 44px;
+                                        border-radius: 50%;
+                                        background: var(--amber-mid);
+                                        display: flex;
+                                        align-items: center;
+                                        justify-content: center;
+                                        font-size: 14px;
+                                        font-weight: 700;
+                                        color: var(--amber);
+                                        flex-shrink: 0;
+                                        overflow: hidden;
+                                        border: 2px solid var(--amber-mid);
+                                    }
+
+                                    .testimonial-avatar img {
+                                        width: 100%;
+                                        height: 100%;
+                                        object-fit: cover;
+                                        display: block;
+                                    }
+
+                                    .testimonial-name {
+                                        font-size: 13px;
+                                        font-weight: 700;
+                                        color: var(--text);
+                                    }
+
+                                    .testimonial-city {
+                                        font-size: 12px;
+                                        color: var(--text-muted);
+                                    }
+
+                                    /* GUARANTEE */
+
+                                    .guarantee {
+                                        display: flex;
+                                        align-items: flex-start;
+                                        gap: 16px;
+                                        background: #eaf4ff;
+                                        border: 1.5px solid #aed6f1;
+                                        border-radius: 12px;
+                                        padding: 20px;
+                                    }
+
+                                    .guarantee-icon {
+                                        font-size: 40px;
+                                        flex-shrink: 0;
+                                    }
+
+                                    .guarantee-title {
+                                        font-size: 16px;
+                                        font-weight: 700;
+                                        color: #1a5276;
+                                        margin-bottom: 6px;
+                                    }
+
+                                    .guarantee-text {
+                                        font-size: 14px;
+                                        color: #2e4053;
+                                        line-height: 1.6;
+                                    }
+
+                                    /* FAQ */
+
+                                    .faq-item {
+                                        border-bottom: 1px solid var(--border);
+                                        padding: 16px 0;
+                                    }
+
+                                    .faq-q {
+                                        font-size: 15px;
+                                        font-weight: 700;
+                                        color: var(--text);
+                                        margin-bottom: 6px;
+                                        display: flex;
+                                        align-items: flex-start;
+                                        gap: 8px;
+                                    }
+
+                                    .faq-q::before {
+                                        content: 'P';
+                                        background: var(--amber-mid);
+                                        color: var(--amber);
+                                        width: 22px;
+                                        height: 22px;
+                                        border-radius: 50%;
+                                        display: flex;
+                                        align-items: center;
+                                        justify-content: center;
+                                        font-size: 11px;
+                                        font-weight: 700;
+                                        flex-shrink: 0;
+                                        margin-top: 1px;
+                                    }
+
+                                    .faq-a {
+                                        font-size: 14px;
+                                        color: var(--text-muted);
+                                        line-height: 1.65;
+                                        padding-left: 30px;
+                                    }
+
+                                    /* FINAL CTA SECTION */
+
+                                    .final-cta {
+                                        background: linear-gradient(160deg, #fffbf5, #fff8ec);
+                                        border-top: 3px solid var(--amber);
+                                        padding: 32px 24px;
+                                        text-align: center;
+                                    }
+
+                                    .final-cta h2 {
+                                        font-family: 'Playfair Display', serif;
+                                        font-size: 22px;
+                                        font-weight: 700;
+                                        line-height: 1.3;
+                                        margin-bottom: 20px;
+                                        color: var(--text);
+                                    }
+
+                                    /* FOOTER */
+
+                                    .footer {
+                                        background: #1a1a1a;
+                                        color: #888;
+                                        text-align: center;
+                                        font-size: 12px;
+                                        padding: 20px 24px;
+                                        line-height: 1.8;
+                                    }
+
+                                    .footer a {
+                                        color: #aaa;
+                                        text-decoration: underline;
+                                    }
+
+                                    /* RESPONSIVE */
+
+                                    @media (max-width: 400px) {
+                                        .hero h1 {
+                                            font-size: 24px;
+                                        }
+                                        .price-new {
+                                            font-size: 32px;
+                                        }
+                                        .breads-grid {
+                                            grid-template-columns: 1fr 1fr;
+                                        }
+                                        .authority-card {
+                                            flex-direction: column;
+                                        }
+                                    }
+
+                                    /* ANIMATIONS */
+
+                                    @keyframes fadeUp {
+                                        from {
+                                            opacity: 0;
+                                            transform: translateY(16px);
+                                        }
+                                        to {
+                                            opacity: 1;
+                                            transform: translateY(0);
+                                        }
+                                    }
+
+                                    .hero h1 {
+                                        animation: fadeUp 0.5s ease both;
+                                    }
+
+                                    .hero-sub {
+                                        animation: fadeUp 0.5s 0.1s ease both;
+                                    }
+
+                                    .video-wrap {
+                                        animation: fadeUp 0.5s 0.2s ease both;
+                                    }
+
+                                    .price-box {
+                                        animation: fadeUp 0.5s 0.3s ease both;
+                                    }
+
+                                    .cta-btn {
+                                        animation: fadeUp 0.5s 0.4s ease both;
+                                    }
+                                </style>
+                            </head>
+
+                            <body>
+
+
+                                <div class="top-bar">
+                                    <span>ATENÇÃO</span> Oferta por tempo limitado — valor pode aumentar a qualquer momento
+                                </div>
+
+                                <div class="page">
+
+
+                                    <div class="hero">
+                                        <div class="eyebrow">Chef Luiza Costa • Especialista em controle de glicemia</div>
+
+                                        <h1>O pão com <em>3 ingredientes</em> que não leva trigo, leite nem açúcar — e ainda assim cresce fofinho e douradinho</h1>
+
+                                        <p class="hero-sub">Ideal para quem tem diabetes e pode ser consumido todos os dias <strong>sem medo de picos de glicemia.</strong></p>
+
+
+                                        <div class="video-wrap">
+                                            <vturb-smartplayer id="vid-69d082be9a320eec063905dd" style="display: block; margin: 0 auto; width: 100%; max-width: 400px;"></vturb-smartplayer>
+                                            <script type="bv_inline_delayed_js" bv_unique_id="Xqkcq8zJelQKgOt97uhF" defer="1" data-cfasync="" async="">var s=document.createElement("script"); s.src="https://scripts.converteai.net/eac02b3c-8e67-4d0d-8c44-404af62a35a2/players/69d082be9a320eec063905dd/v4/player.js"; s.async=!0; document.head.appendChild(s);
+                                            </script>
+                                        </div>
+
+                                        <div class="proof-bar">
+                                            <div class="dot"></div>
+                                            Mais de 4.000 pessoas já receberam essas receitas esta semana
+                                        </div>
+
+                                        <div class="price-box">
+                                            <div class="price-old">De R$ 97,00</div>
+                                            <div class="price-new"><small>R$</small> 19,90</div>
+                                            <div class="price-note">acesso imediato • entrega por WhatsApp</div>
+                                        </div>
+
+                                        <a href="https://pay.wiapy.com/FTsMDM19tZ" class="cta-btn">
+      ✅ SIM! QUERO AS RECEITAS AGORA POR R$ 19,90
+    </a>
+                                        <p class="cta-sub">🔒 Pagamento 100% seguro • 7 dias de garantia</p>
+
+                                        <div class="trust-row">
+                                            <div class="trust-item">
+                                                <svg viewBox="0 0 24 24"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg> Pix ou Cartão
+                                            </div>
+                                            <div class="trust-item">
+                                                <svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg> Compra Segura
+                                            </div>
+                                            <div class="trust-item">
+                                                <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg> Acesso Imediato
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="section">
+                                        <div class="section-label">Quem vai te ensinar</div>
+                                        <h2>Conheça a Chef Luiza Costa</h2>
+
+                                        <div class="authority-card">
+                                            <img bv-data-src="https://i.imgur.com/jMmJ2BH.jpeg" class="bv-tag-attr-replace bv-lazyload-tag-img" decoding="async" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" alt="Chef Luiza Costa">
+                                            <div>
+                                                <div class="authority-name">Chef Luiza Costa</div>
+                                                <div class="authority-role">Especialista em controle de glicemia • +4 anos</div>
+                                                <p class="authority-bio">Selecionou as melhores receitas de pães artesanais e pratos do dia a dia sem açúcar e sem glúten, testadas e aprovadas por diabéticos tipo 2 e pré-diabéticos. Já ajudou mais de 12.000 pessoas a comer bem
+                                                    sem abrir mão do sabor.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="section" style="background: #fafafa;">
+                                        <div class="section-label">Você se identifica?</div>
+                                        <h2>Isso soa familiar para você?</h2>
+
+                                        <ul class="pain-list">
+                                            <li class="pain-item">
+                                                <div class="icon-x"><svg viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></div>
+                                                Sente falta do pão no café da manhã mas tem medo de aumentar a glicemia
+                                            </li>
+                                            <li class="pain-item">
+                                                <div class="icon-x"><svg viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></div>
+                                                Já tentou pães "sem glúten" do mercado e não gostou do gosto ou da textura borrachuda
+                                            </li>
+                                            <li class="pain-item">
+                                                <div class="icon-x"><svg viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></div>
+                                                Acha que comida saudável para diabético é sem graça e sem prazer nenhum
+                                            </li>
+                                            <li class="pain-item">
+                                                <div class="icon-x"><svg viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></div>
+                                                Não sabe o que preparar no dia a dia sem sair da dieta e sem repetir sempre a mesma coisa
+                                            </li>
+                                        </ul>
+
+                                        <div class="promise-box">
+                                            <strong>Se você respondeu sim para qualquer uma dessas situações,</strong> as receitas da Chef Luiza foram feitas exatamente para você. Ingredientes simples, baratos e que você encontra em qualquer mercado —
+                                            e que vão deixar você com vontade de cozinhar todos os dias.
+                                        </div>
+                                    </div>
+
+
+                                    <div class="section">
+                                        <div class="section-label">O que você vai aprender</div>
+                                        <h2>Receitas de pães artesanais que crescem, ficam fofos e não aumentam a glicose</h2>
+
+                                        <div class="breads-grid">
+                                            <div class="bread-card">
+                                                <span class="bread-icon">🍞</span>
+                                                <div class="bread-name">Pão de queijo gigante</div>
+                                            </div>
+                                            <div class="bread-card">
+                                                <span class="bread-icon">🥖</span>
+                                                <div class="bread-name">Pão com casquinha crocante</div>
+                                            </div>
+                                            <div class="bread-card">
+                                                <span class="bread-icon">🥐</span>
+                                                <div class="bread-name">Pão de 3 ingredientes</div>
+                                            </div>
+                                            <div class="bread-card">
+                                                <span class="bread-icon">🫓</span>
+                                                <div class="bread-name">Pão fofinho de frigideira</div>
+                                            </div>
+                                            <div class="bread-card">
+                                                <span class="bread-icon">🍞</span>
+                                                <div class="bread-name">Pão integral sem trigo</div>
+                                            </div>
+                                            <div class="bread-card">
+                                                <span class="bread-icon">🌿</span>
+                                                <div class="bread-name">Pão de ervas artesanal</div>
+                                            </div>
+                                        </div>
+
+                                        <p class="breads-note">+ dezenas de outras receitas de pães testados por diabéticos tipo 2 e pré-diabéticos</p>
+                                    </div>
+
+
+                                    <div class="section" style="background: #fafafa;">
+                                        <div class="section-label">Tudo incluído no seu acesso</div>
+                                        <h2>Além dos pães, você leva muito mais</h2>
+
+                                        <div class="bonus-block">
+                                            <div class="bonus-title">🎁 Bônus incluídos — sem custo extra</div>
+
+                                            <div class="bonus-item">
+                                                <div class="icon-check"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></div>
+                                                <div><strong>500 receitas completas</strong> — café da manhã, almoço, lanche e jantar, tudo com modo de preparo detalhado</div>
+                                            </div>
+                                            <div class="bonus-item">
+                                                <div class="icon-check"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></div>
+                                                <div><strong>Receitas de molhos e patês</strong> para acompanhar os pães e deixar tudo mais gostoso</div>
+                                            </div>
+                                            <div class="bonus-item">
+                                                <div class="icon-check"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></div>
+                                                <div><strong>Sobremesas sem açúcar</strong> que parecem pecado mas não aumentam a glicemia</div>
+                                            </div>
+                                            <div class="bonus-item">
+                                                <div class="icon-check"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></div>
+                                                <div><strong>Lanches rápidos</strong> para não escorregar na dieta nos momentos de fome</div>
+                                            </div>
+                                            <div class="bonus-item">
+                                                <div class="icon-check"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></div>
+                                                <div><strong>Guia de substituições</strong> com ingredientes simples e baratos para adaptar qualquer receita</div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="section">
+                                        <div class="section-label">Resultados reais</div>
+                                        <h2>O que dizem quem já testou as receitas:</h2>
+
+                                        <div class="testimonial">
+                                            <div class="stars">★★★★★</div>
+                                            <p class="testimonial-text">"Nunca pensei que ia conseguir fazer um pão tão gostoso sem farinha de trigo. Fiz o de 3 ingredientes e minha família inteira amou. E minha glicemia ficou estável o dia todo!"</p>
+                                            <div class="testimonial-footer">
+                                                <div class="testimonial-avatar"><img bv-data-src="https://i.imgur.com/p14Ijq4.jpeg" class="bv-tag-attr-replace bv-lazyload-tag-img" decoding="async" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E"
+                                                        alt="Maria Aparecida S."></div>
+                                                <div>
+                                                    <div class="testimonial-name">Maria Aparecida S.</div>
+                                                    <div class="testimonial-city">São Paulo — diabética tipo 2 há 6 anos</div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="testimonial">
+                                            <div class="stars">★★★★★</div>
+                                            <p class="testimonial-text">"Eu sempre quis cortar o açúcar, mas não sabia o que comer no dia a dia. Essas receitas mudaram completamente minha alimentação. Já perdi 4kg e me sinto muito menos inchada. E o melhor: as comidas são muito
+                                                gostosas!"</p>
+                                            <div class="testimonial-footer">
+                                                <div class="testimonial-avatar"><img bv-data-src="https://i.imgur.com/P7sng9U.jpeg" class="bv-tag-attr-replace bv-lazyload-tag-img" decoding="async" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E"
+                                                        alt="Mariana S."></div>
+                                                <div>
+                                                    <div class="testimonial-name">Mariana S.</div>
+                                                    <div class="testimonial-city">São Paulo</div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="testimonial">
+                                            <div class="stars">★★★★★</div>
+                                            <p class="testimonial-text">"Comprei achando que ia ser mais do mesmo. Me surpreendi. São 500 receitas de verdade, com modo de preparo completo. O pão de queijo gigante virou rotina aqui em casa."</p>
+                                            <div class="testimonial-footer">
+                                                <div class="testimonial-avatar"><img bv-data-src="https://i.imgur.com/gjyUFNf.jpeg" class="bv-tag-attr-replace bv-lazyload-tag-img" decoding="async" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E"
+                                                        alt="Ricardo T."></div>
+                                                <div>
+                                                    <div class="testimonial-name">Ricardo T.</div>
+                                                    <div class="testimonial-city">Rio de Janeiro</div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="testimonial">
+                                            <div class="stars">★★★★★</div>
+                                            <p class="testimonial-text">"Eu achei que comida sem açúcar e sem glúten seria sem graça… mas me surpreendi. As receitas são fáceis e muito saborosas. Já virei fã das sobremesas."</p>
+                                            <div class="testimonial-footer">
+                                                <div class="testimonial-avatar"><img bv-data-src="https://i.imgur.com/5DW9s4z.jpeg" class="bv-tag-attr-replace bv-lazyload-tag-img" decoding="async" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E"
+                                                        alt="Fernanda M."></div>
+                                                <div>
+                                                    <div class="testimonial-name">Fernanda M.</div>
+                                                    <div class="testimonial-city">Curitiba</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="section" style="background: #fafafa;">
+                                        <div class="guarantee">
+                                            <div class="guarantee-icon">🛡️</div>
+                                            <div>
+                                                <div class="guarantee-title">Garantia de 7 dias — risco zero para você</div>
+                                                <p class="guarantee-text">Acesse as receitas, teste o pão de 3 ingredientes, experimente o que quiser. Se por qualquer motivo você não ficar satisfeito, basta enviar um e-mail e devolvemos 100% do seu dinheiro. Sem perguntas, sem
+                                                    burocracia.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="final-cta">
+                                        <h2>Comece ainda hoje a comer bem sem medo da glicemia</h2>
+
+                                        <div class="price-box">
+                                            <div class="price-old">De R$ 97,00</div>
+                                            <div class="price-new"><small>R$</small> 19,90</div>
+                                            <div class="price-note">pague uma vez • acesse para sempre</div>
+                                        </div>
+
+                                        <a href="https://pay.wiapy.com/FTsMDM19tZ" class="cta-btn">
+      ✅ QUERO AS RECEITAS AGORA — R$ 19,90
+    </a>
+                                        <p class="cta-sub" style="margin-top:10px;">🔒 Pix ou cartão de crédito • Acesso imediato por Whatsapp • 7 dias de garantia</p>
+                                    </div>
+
+
+                                    <div class="section">
+                                        <div class="section-label">Dúvidas</div>
+                                        <h2>Perguntas frequentes</h2>
+
+                                        <div class="faq-item">
+                                            <div class="faq-q">Como vou receber as receitas?</div>
+                                            <p class="faq-a">Assim que o pagamento for confirmado, você recebe acesso imediato no seu whatsapp. Funciona em qualquer celular, tablet ou computador.</p>
+                                        </div>
+                                        <div class="faq-item">
+                                            <div class="faq-q">As receitas são difíceis de fazer?</div>
+                                            <p class="faq-a">Não! Foram criadas para o dia a dia, com ingredientes simples e baratos. Mesmo quem tem pouca experiência na cozinha consegue preparar sem dificuldade.</p>
+                                        </div>
+                                        <div class="faq-item">
+                                            <div class="faq-q">Serve para diabético tipo 1 também?</div>
+                                            <p class="faq-a">As receitas são zero açúcar e zero glúten, pensadas especialmente para diabéticos tipo 2 e pré-diabéticos. Para diabético tipo 1, recomendamos consultar seu médico antes de mudar a dieta.</p>
+                                        </div>
+                                        <div class="faq-item">
+                                            <div class="faq-q">Preciso ser cozinheiro para fazer as receitas?</div>
+                                            <p class="faq-a">De jeito nenhum. Todas as receitas têm o modo de preparo completo e detalhado, passo a passo. Se você nunca cozinhou na vida, vai conseguir.</p>
+                                        </div>
+                                        <div class="faq-item">
+                                            <div class="faq-q">E se eu não gostar do conteúdo?</div>
+                                            <p class="faq-a">Você tem 7 dias de garantia total. Basta pedir o reembolso por e-mail e devolvemos 100% do valor pago, sem nenhuma pergunta ou burocracia.</p>
+                                        </div>
+                                        <div class="faq-item" style="border-bottom: none;">
+                                            <div class="faq-q">Quando recebo após o pagamento?</div>
+                                            <p class="faq-a">Para pagamentos no Pix ou cartão de crédito, o acesso é imediato. Para boleto, pode levar até 1 dia útil para compensar.</p>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="footer">
+                                        Chef Luiza Costa — Evoluir Sempre<br> Todos os direitos reservados<br>
+                                        <span style="font-size:11px;color:#666;">Este produto é digital. Após a confirmação do pagamento, o acesso é enviado por e-mail em formato PDF.</span>
+                                    </div>
+
+                                </div>
+                            </body>
+
+                            </html>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script type="speculationrules">
+        {"prefetch":[{"source":"document","where":{"and":[{"href_matches":"/*"},{"not":{"href_matches":["/wp-*.php","/wp-admin/*","/wp-content/uploads/*","/wp-content/*","/wp-content/plugins/*","/wp-content/themes/hostinger-blog/*","/*\\?(.+)"]}},{"not":{"selector_matches":"a[rel~=\"nofollow\"]"}},{"not":{"selector_matches":".no-prefetch,
+        .no-prefetch a"}}]},"eagerness":"conservative"}]}
+    </script>
+    <script type="bv_inline_delayed_js" bv_unique_id="u19kjb2SCopvUxtXps9d" defer="1" data-cfasync="" bv_inline_delayed="1" async="">const lazyloadRunObserver = () => { const lazyloadBackgrounds = document.querySelectorAll( `.e-con.e-parent:not(.e-lazyloaded)` ); const lazyloadBackgroundObserver = new IntersectionObserver( ( entries ) => { entries.forEach( ( entry ) => { if ( entry.isIntersecting
+        ) { let lazyloadBackground = entry.target; if( lazyloadBackground ) { lazyloadBackground.classList.add( 'e-lazyloaded' ); } lazyloadBackgroundObserver.unobserve( entry.target ); } }); }, { rootMargin: '200px 0px 200px 0px' } ); lazyloadBackgrounds.forEach(
+        ( lazyloadBackground ) => { lazyloadBackgroundObserver.observe( lazyloadBackground ); } ); }; const events = [ 'DOMContentLoaded', 'elementor/lazyload/observe', ]; events.forEach( ( event ) => { document.addEventListener( event, lazyloadRunObserver
+        ); } );</script>
+    <template id="Lp3xt7PFU5A6tT4ovkmf"></template>
+    <template id="0oHdMF1StdqlZ3utISD2"></template>
+    <script type="bv_inline_delayed_js" bv_unique_id="Xhd1dlcOxVyVHcGELafZ" id="wp-i18n-js-after" defer="1" data-cfasync="" bv_inline_delayed="1" async="">wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } ); //# sourceURL=wp-i18n-js-after</script>
+    <script type="bv_inline_delayed_js" bv_unique_id="VmPKiKxZ7lImwtceGfkz" id="presto-components-js-extra" defer="1" data-cfasync="" bv_inline_delayed="1" async="">var prestoComponents = {"url":"https://evoluirsempre.site/wp-content/plugins/presto-player/dist/components/web-components/web-components.esm.js?ver=1776059378"}; var prestoPlayer = {"plugin_url":"https://evoluirsempre.site/wp-content/plugins/presto-player/","logged_in":"","root":"https://evoluirsempre.site/wp-json/","nonce":"d0a4983c9d","ajaxurl":"https://evoluirsempre.site/wp-admin/admin-ajax.php","isAdmin":"","isSetup":{"bunny":false},"proVersion":"","isPremium":"","wpVersionString":"wp/v2/","prestoVersionString":"presto-player/v1/","debug":"","debug_navigator":"","i18n":{"skip":"Skip","rewatch":"Rewatch","emailPlaceholder":"Email
+        address","emailDefaultHeadline":"Enter your email to play this episode.","chapters":"Chapters","show_chapters":"Show Chapters","hide_chapters":"Hide Chapters","restart":"Restart","rewind":"Rewind {seektime}s","play":"Play","pause":"Pause","fastForward":"Forward
+        {seektime}s","seek":"Seek","seekLabel":"{currentTime} of {duration}","played":"Played","buffered":"Buffered","currentTime":"Current time","duration":"Duration","volume":"Volume","mute":"Mute","unmute":"Unmute","enableCaptions":"Enable captions","disableCaptions":"Disable
+        captions","download":"Download","enterFullscreen":"Enter fullscreen","exitFullscreen":"Exit fullscreen","frameTitle":"Player for {title}","captions":"Captions","settings":"Settings","pip":"PIP","menuBack":"Go back to previous menu","speed":"Speed","normal":"Normal","quality":"Quality","loop":"Loop","start":"Start","end":"End","all":"All","reset":"Reset","disabled":"Disabled","enabled":"Enabled","advertisement":"Ad","qualityBadge":{"2160":"4K","1440":"HD","1080":"HD","720":"HD","576":"SD","480":"SD"},"auto":"AUTO","next":"Next","upNext":"Up
+        Next","startOver":"Start Over"},"trackViews":"1"}; var prestoComponents = {"url":"https://evoluirsempre.site/wp-content/plugins/presto-player/dist/components/web-components/web-components.esm.js?ver=1776059378"}; var prestoPlayer = {"plugin_url":"https://evoluirsempre.site/wp-content/plugins/presto-player/","logged_in":"","root":"https://evoluirsempre.site/wp-json/","nonce":"d0a4983c9d","ajaxurl":"https://evoluirsempre.site/wp-admin/admin-ajax.php","isAdmin":"","isSetup":{"bunny":false},"proVersion":"","isPremium":"","wpVersionString":"wp/v2/","prestoVersionString":"presto-player/v1/","debug":"","debug_navigator":"","i18n":{"skip":"Skip","rewatch":"Rewatch","emailPlaceholder":"Email
+        address","emailDefaultHeadline":"Enter your email to play this episode.","chapters":"Chapters","show_chapters":"Show Chapters","hide_chapters":"Hide Chapters","restart":"Restart","rewind":"Rewind {seektime}s","play":"Play","pause":"Pause","fastForward":"Forward
+        {seektime}s","seek":"Seek","seekLabel":"{currentTime} of {duration}","played":"Played","buffered":"Buffered","currentTime":"Current time","duration":"Duration","volume":"Volume","mute":"Mute","unmute":"Unmute","enableCaptions":"Enable captions","disableCaptions":"Disable
+        captions","download":"Download","enterFullscreen":"Enter fullscreen","exitFullscreen":"Exit fullscreen","frameTitle":"Player for {title}","captions":"Captions","settings":"Settings","pip":"PIP","menuBack":"Go back to previous menu","speed":"Speed","normal":"Normal","quality":"Quality","loop":"Loop","start":"Start","end":"End","all":"All","reset":"Reset","disabled":"Disabled","enabled":"Enabled","advertisement":"Ad","qualityBadge":{"2160":"4K","1440":"HD","1080":"HD","720":"HD","576":"SD","480":"SD"},"auto":"AUTO","next":"Next","upNext":"Up
+        Next","startOver":"Start Over"},"trackViews":"1"}; //# sourceURL=presto-components-js-extra</script>
+    <template id="66Osix3mzAHEUZm2Ez6Z"></template>
+    <script type="bv_inline_delayed_js" bv_unique_id="gXjHkKugOLdPdyT1euwj" id="hostinger-blog-theme-scripts-js-extra" defer="1" data-cfasync="" bv_inline_delayed="1" async="">var hts_ajax_object = {"ajax_url":"https://evoluirsempre.site/wp-admin/admin-ajax.php"}; var hts_ajax_object = {"ajax_url":"https://evoluirsempre.site/wp-admin/admin-ajax.php","security":"3eea2892c8"}; //# sourceURL=hostinger-blog-theme-scripts-js-extra</script>
+    <template id="iH17j0xvnok5FG6o7EsV"></template>
+    <template id="BK0R5Ab7nnfEtl7ILQrv"></template>
+    <template id="LKzpQTvySHq6l60mv9h0"></template>
+    <template id="GDWRrNnC7FHFS6VMsUUK"></template>
+    <script type="bv_inline_delayed_js" bv_unique_id="alFBBBV2ynOBh7JVqdKH" defer="1" data-cfasync="" async="">var elementorFrontendConfig = {"environmentMode":{"edit":false,"wpPreview":false,"isScriptDebug":false},"i18n":{"shareOnFacebook":"Compartilhar no Facebook","shareOnTwitter":"Compartilhar no Twitter","pinIt":"Fixar","download":"Baixar","downloadImage":"Baixar
+        imagem","fullscreen":"Tela cheia","zoom":"Zoom","share":"Compartilhar","playVideo":"Reproduzir v\u00eddeo","previous":"Anterior","next":"Pr\u00f3ximo","close":"Fechar","a11yCarouselPrevSlideMessage":"Slide anterior","a11yCarouselNextSlideMessage":"Pr\u00f3ximo
+        slide","a11yCarouselFirstSlideMessage":"Este \u00e9 o primeiro slide","a11yCarouselLastSlideMessage":"Este \u00e9 o \u00faltimo slide","a11yCarouselPaginationBulletMessage":"Ir para o slide"},"is_rtl":false,"breakpoints":{"xs":0,"sm":480,"md":768,"lg":1025,"xl":1440,"xxl":1600},"responsive":{"breakpoints":{"mobile":{"label":"Dispositivos
+        m\u00f3veis no modo retrato","value":767,"default_value":767,"direction":"max","is_enabled":true},"mobile_extra":{"label":"Dispositivos m\u00f3veis no modo paisagem","value":880,"default_value":880,"direction":"max","is_enabled":false},"tablet":{"label":"Tablet
+        no modo retrato","value":1024,"default_value":1024,"direction":"max","is_enabled":true},"tablet_extra":{"label":"Tablet no modo paisagem","value":1200,"default_value":1200,"direction":"max","is_enabled":false},"laptop":{"label":"Notebook","value":1366,"default_value":1366,"direction":"max","is_enabled":false},"widescreen":{"label":"Tela
+        ampla (widescreen)","value":2400,"default_value":2400,"direction":"min","is_enabled":false}},"hasCustomBreakpoints":false},"version":"4.0.1","is_static":false,"experimentalFeatures":{"e_font_icon_svg":true,"additional_custom_breakpoints":true,"container":true,"e_optimized_markup":true,"theme_builder_v2":true,"nested-elements":true,"global_classes_should_enforce_capabilities":true,"e_variables":true,"e_opt_in_v4_page":true,"e_components":true,"e_interactions":true,"e_widget_creation":true,"import-export-customization":true,"e_pro_variables":true},"urls":{"assets":"https:\/\/evoluirsempre.site\/wp-content\/plugins\/elementor\/assets\/","ajaxurl":"https:\/\/evoluirsempre.site\/wp-admin\/admin-ajax.php","uploadUrl":"https:\/\/evoluirsempre.site\/wp-content\/uploads"},"nonces":{"floatingButtonsClickTracking":"c8c5848299","atomicFormsSendForm":"667c30d66f"},"swiperClass":"swiper","settings":{"page":[],"editorPreferences":[]},"kit":{"active_breakpoints":["viewport_mobile","viewport_tablet"],"global_image_lightbox":"yes","lightbox_enable_counter":"yes","lightbox_enable_fullscreen":"yes","lightbox_enable_zoom":"yes","lightbox_enable_share":"yes","lightbox_title_src":"title","lightbox_description_src":"description"},"post":{"id":2956,"title":"Receitas%20ZERO%20%E2%80%93%20evoluirsempre.site%2Fmm","excerpt":"","featuredImage":false}};
+        //# sourceURL=elementor-frontend-js-before</script>
+    <template id="YqqiE2Cc6D5cvS7Vn6Eo"></template>
+    <template id="76PHqRaewRY8iRXwn8ED"></template>
+    <script type="bv_inline_delayed_js" bv_unique_id="4BstRrMkwcgr6KKOpXn1" defer="1" data-cfasync="" async="">var ElementorProFrontendConfig = {"ajaxurl":"https:\/\/evoluirsempre.site\/wp-admin\/admin-ajax.php","nonce":"1e830d5b00","urls":{"assets":"https:\/\/evoluirsempre.site\/wp-content\/plugins\/pro-elements\/assets\/","rest":"https:\/\/evoluirsempre.site\/wp-json\/"},"settings":{"lazy_load_background_images":true},"popup":{"hasPopUps":false},"shareButtonsNetworks":{"facebook":{"title":"Facebook","has_counter":true},"twitter":{"title":"Twitter"},"linkedin":{"title":"LinkedIn","has_counter":true},"pinterest":{"title":"Pinterest","has_counter":true},"reddit":{"title":"Reddit","has_counter":true},"vk":{"title":"VK","has_counter":true},"odnoklassniki":{"title":"OK","has_counter":true},"tumblr":{"title":"Tumblr"},"digg":{"title":"Digg"},"skype":{"title":"Skype"},"stumbleupon":{"title":"StumbleUpon","has_counter":true},"mix":{"title":"Mix"},"telegram":{"title":"Telegram"},"pocket":{"title":"Pocket","has_counter":true},"xing":{"title":"XING","has_counter":true},"whatsapp":{"title":"WhatsApp"},"email":{"title":"Email"},"print":{"title":"Print"},"x-twitter":{"title":"X"},"threads":{"title":"Threads"}},"facebook_sdk":{"lang":"pt_BR","app_id":""},"lottie":{"defaultAnimationUrl":"https:\/\/evoluirsempre.site\/wp-content\/plugins\/pro-elements\/modules\/lottie\/assets\/animations\/default.json"}};
+        //# sourceURL=elementor-pro-frontend-js-before</script>
+    <template id="xXwMDG0aaak2L1V8OYsq"></template>
+    <template id="Ny82Ot7jI28JAXph5AaJ"></template>
+    <script id="wp-emoji-settings" type="application/json">
+        {
+            "baseUrl": "https://s.w.org/images/core/emoji/17.0.2/72x72/",
+            "ext": ".png",
+            "svgUrl": "https://s.w.org/images/core/emoji/17.0.2/svg/",
+            "svgExt": ".svg",
+            "source": {
+                "concatemoji": "https://evoluirsempre.site/wp-includes/js/wp-emoji-release.min.js?ver=6.9.4"
+            }
+        }
+    </script>
+    <script type="bv_inline_delayed_js" bv_unique_id="VaKsIqgrlLEg02RhmGF6" defer="1" data-cfasync="" bv_inline_delayed="1" async="">/*! This file is auto-generated */ const a=JSON.parse(document.getElementById("wp-emoji-settings").textContent),o=(window._wpemojiSettings=a,"wpEmojiSettingsSupports"),s=["flag","emoji"];function i(e){try{var t={supportTests:e,timestamp:(new Date).valueOf()};sessionStorage.setItem(o,JSON.stringify(t))}catch(e){}}function
+        c(e,t,n){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);t=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data);e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(n,0,0);const a=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data);return
+        t.every((e,t)=>e===a[t])}function p(e,t){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);var n=e.getImageData(16,16,1,1);for(let e=0;e
+        <n.data.length;e++)if(0!==n.data[e])return!1;return!0}function u(e,t,n,a){switch(t){case
+            "flag":return n(e, "\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f", "\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f")?!1:!n(e, "\ud83c\udde8\ud83c\uddf6", "\ud83c\udde8\u200b\ud83c\uddf6")&&!n(e,
+            "\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f", "\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f");case "emoji":return!a(e, "\ud83e\u1fac8")}return!1}function f(e,t,n,a){let r;const o=(r="undefined" !=typeof WorkerGlobalScope&&self
+            instanceof WorkerGlobalScope?new OffscreenCanvas(300,150):document.createElement( "canvas")).getContext( "2d",{willReadFrequently:!0}),s=(o.textBaseline="top" ,o.font="600 32px Arial" ,{});return e.forEach(e=>{s[e]=t(o,e,n,a)}),s}function r(e){var t=document.createElement("script");t.src=e,t.defer=!0,document.head.appendChild(t)}a.supports={everything:!0,everythingExceptFlag:!0},new Promise(t=>{let n=function(){try{var e=JSON.parse(sessionStorage.getItem(o));if("object"==typeof
+            e&&"number"==typeof e.timestamp&&(new Date).valueOf()
+            <e.timestamp+604800&& "object"==typeof e.supportTests)return e.supportTests}catch(e){}return null}();if(!n){if( "undefined"!=typeof Worker&& "undefined"!=typeof OffscreenCanvas&&
+                "undefined"!=typeof URL&&URL.createObjectURL&& "undefined"!=typeof Blob)try{var e="postMessage(" +f.toString()+ "("+[JSON.stringify(s),u.toString(),c.toString(),p.toString()].join( ",")+ "));",a=new Blob([e],{type: "text/javascript"});const r=new Worker(URL.createObjectURL(a),{name:
+                "wpTestEmojiSupports"});return void(r.onmessage=e=>{i(n=e.data),r.terminate(),t(n)})}catch(e){}i(n=f(s,u,c,p))}t(n)}).then(e=>{for(const n in e)a.supports[n]=e[n],a.supports.everything=a.supports.everything&&a.supports[n],"flag"!==n&&(a.supports.everythingExceptFlag=a.supports.everythingExceptFlag&&a.supports[n]);var
+                t;a.supports.everythingExceptFlag=a.supports.everythingExceptFlag&&!a.supports.flag,a.supports.everything||((t=a.source||{}).concatemoji?r(t.concatemoji):t.wpemoji&&t.twemoji&&(r(t.twemoji),r(t.wpemoji)))}); //# sourceURL=https://evoluirsempre.site/wp-includes/js/wp-emoji-loader.min.js</script>
+    <script id="bv-override-listeners">
+        var __defProp = Object.defineProperty;
+        var __name = (target, value) => __defProp(target, "name", {
+            value,
+            configurable: !0
+        });
+        var BV_DEBUG_MODE = !1;
+
+        function bvDebugLog(...args) {
+            BV_DEBUG_MODE && console.log(...args)
+        }
+        __name(bvDebugLog, "bvDebugLog");
+
+        function bv_override_browser_listener(target) {
+            var bv_og_add_event_listener = target.addEventListener,
+                bv_og_remove_event_listener = target.removeEventListener;
+
+            function bv_handle_event_listeners(type, listener, options) {
+                var handledEvents = ["readystatechange", "DOMContentLoaded", "load", "pageshow"],
+                    eventName = type;
+                (!document.currentScript || !document.currentScript.hasAttribute("bv-exclude")) && (eventName = handledEvents.indexOf(type) !== -1 ? "Airlift" + type : type), arguments[0] = eventName, bv_og_add_event_listener.apply(target, arguments)
+            }
+            __name(bv_handle_event_listeners, "bv_handle_event_listeners");
+
+            function bv_handle_remove_event_listener(type, listener, options) {
+                var handledEvents = ["readystatechange", "DOMContentLoaded", "load", "pageshow"],
+                    eventName = type;
+                (!document.currentScript || !document.currentScript.hasAttribute("bv-exclude")) && (eventName = handledEvents.indexOf(type) !== -1 ? "Airlift" + type : type), arguments[0] = eventName, bv_og_remove_event_listener.apply(target, arguments)
+            }
+            __name(bv_handle_remove_event_listener, "bv_handle_remove_event_listener"), target.addEventListener = function(type, listener, options) {
+                bv_handle_event_listeners(type, listener, options)
+            }, target.removeEventListener = function(type, listener, options) {
+                bv_handle_remove_event_listener(type, listener, options)
+            }
+        }
+        __name(bv_override_browser_listener, "bv_override_browser_listener"), bv_override_browser_listener(window), bv_override_browser_listener(document);
+
+        function bv_override_property_listeners(target, eventType) {
+            if (!target || typeof target != "object") {
+                console.error("bv_override_property_listeners: Invalid target", target);
+                return
+            }
+            var airliftPropertyName = "on" + eventType,
+                existingDescriptor = Object.getOwnPropertyDescriptor(target, airliftPropertyName);
+            if (existingDescriptor && !existingDescriptor.configurable) {
+                console.warn("Cannot override " + airliftPropertyName + ": property is not configurable");
+                return
+            }
+            var bv_internalHandler = null,
+                airliftEventName = "Airlift" + eventType,
+                bvWrapperFunction = __name(function(e) {
+                    if (bv_internalHandler) try {
+                        bv_internalHandler(e)
+                    } catch (error) {
+                        console.error("Error in " + airliftPropertyName + " handler:", error)
+                    }
+                }, "bvWrapperFunction");
+            try {
+                Object.defineProperty(target, airliftPropertyName, {
+                    get: __name(function() {
+                        return bv_internalHandler
+                    }, "get"),
+                    set: __name(function(handler) {
+                        if (handler != null && typeof handler != "function") {
+                            console.warn("Invalid handler for " + airliftPropertyName + ", ignoring");
+                            return
+                        }
+                        handler ? (bv_internalHandler || target.addEventListener(airliftEventName, bvWrapperFunction), bv_internalHandler = handler) : (bv_internalHandler = null, target.removeEventListener(airliftEventName, bvWrapperFunction))
+                    }, "set"),
+                    enumerable: !0,
+                    configurable: !0
+                })
+            } catch (error) {
+                console.error("Failed to override " + airliftPropertyName + ":", error)
+            }
+        }
+        __name(bv_override_property_listeners, "bv_override_property_listeners"), bv_override_property_listeners(window, "load"), bv_override_property_listeners(window, "pageshow"), bv_override_property_listeners(document, "DOMContentLoaded"), bv_override_property_listeners(document, "readystatechange");
+
+        function bv_override_document_write() {
+            var bv_original_write = document.write,
+                bv_original_writeln = document.writeln;
+
+            function bv_handle_document_write(scriptElement, content) {
+                try {
+                    if (content == null) return;
+                    if (content = String(content), scriptElement && scriptElement.hasAttribute("bv-exclude")) return bv_original_write.call(document, content);
+                    var container = null;
+                    scriptElement && scriptElement.documentWriteContainer ? container = scriptElement.documentWriteContainer : (container = document.createElement("span"), scriptElement && (scriptElement.documentWriteContainer = container)), container.innerHTML += content;
+                    var insertPoint = scriptElement || document.currentScript;
+                    if (!container.parentNode)
+                        if (insertPoint && insertPoint.parentNode) insertPoint.parentNode.insertBefore(container, insertPoint.nextSibling);
+                        else if (document.body) document.body.appendChild(container);
+                    else {
+                        console.warn("document.body not ready for document.write, deferring"), typeof window < "u" && window.addEventListener("DOMContentLoaded", function() {
+                            document.body && !container.parentNode && document.body.appendChild(container)
+                        });
+                        return
+                    }
+                    var tempDiv = document.createElement("span");
+                    tempDiv.innerHTML = content;
+                    var scriptsInContent = tempDiv.querySelectorAll("script");
+                    scriptsInContent.length > 0 && scriptsInContent.forEach(function(oldScript) {
+                        try {
+                            var newScript = document.createElement("script"),
+                                attributes = oldScript.getAttributeNames();
+                            attributes.forEach(function(attr) {
+                                try {
+                                    newScript.setAttribute(attr, oldScript.getAttribute(attr))
+                                } catch {
+                                    bvDebugLog("Not able to set Attribute:")
+                                }
+                            }), newScript.async = !1, !oldScript.src && oldScript.textContent && (newScript.textContent = oldScript.textContent), newScript.setAttribute("bv-document-write", ""), setTimeout(function() {
+                                try {
+                                    insertPoint && insertPoint.parentNode ? insertPoint.parentNode.insertBefore(newScript, insertPoint.nextSibling) : document.head && document.head.appendChild(newScript)
+                                } catch (error) {
+                                    console.error("Error inserting document.write script:", error)
+                                }
+                            }, 0)
+                        } catch (error) {
+                            console.error("Error processing document.write script:", error)
+                        }
+                    })
+                } catch (error) {
+                    console.error("Error in document.write handler:", error);
+                    try {
+                        bv_original_write.call(document, content)
+                    } catch (e) {
+                        console.error("Fallback document.write also failed:", e)
+                    }
+                }
+            }
+            __name(bv_handle_document_write, "bv_handle_document_write"), document.write = function(content) {
+                bv_handle_document_write(document.currentScript, content)
+            }, document.writeln = function(content) {
+                bv_handle_document_write(document.currentScript, content + `
+`)
+            }
+        }
+        __name(bv_override_document_write, "bv_override_document_write"), bv_override_document_write();
+    </script>
+    <template id=d6fe9c24159ed4a27d224d91c70f8fdc></template>
+    <script id="bv-font-style-lazyload" data-cfasync="false" bv-exclude="true">
+        var bv_font_url = "https://evoluirsempre.site/wp-content/uploads/al_opt_content/CSS/evoluirsempre.site/69df83f646fa5cda282b7fd9-371b773ec3872fe2c6670fd19dacae8c_al_style.css";
+        window.addEventListener("load", function() {
+            var link = document.createElement("link");
+            link.rel = "stylesheet", link.href = bv_font_url, document.head.appendChild(link)
+        });
+    </script>
+
+    <script id="bv-dynamic-image-lazyload" data-cfasync="false" bv-exclude="true">
+        var __defProp = Object.defineProperty;
+        var __name = (target, value) => __defProp(target, "name", {
+            value,
+            configurable: !0
+        });
+        var BV_IS_RESIZE_ENABLED = !0,
+            BV_IMAGES_NOT_TO_RESIZE = [],
+            BV_DEBUG_MODE = !1;
+
+        function bvDebugLog(...args) {
+            BV_DEBUG_MODE && console.log(...args)
+        }
+        __name(bvDebugLog, "bvDebugLog");
+
+        function getImageDeviceName(resized_infos_str, dimensions) {
+            let device_width = window.outerWidth;
+            if (resized_infos_str) {
+                const device_size_infos = resized_infos_str.split(";");
+                for (const device_info of device_size_infos) {
+                    const [device_name, resized_dim] = device_info.split(":"), [width_str, height_str] = resized_dim.split("*"), width = parseInt(width_str, 10), height = parseInt(height_str, 10);
+                    if (dimensions.width <= width && dimensions.height <= height && device_width <= width) return device_name
+                }
+                return ""
+            }
+            return device_width <= 480 ? "bv_resized_mobile" : device_width <= 820 ? "bv_resized_ipad" : device_width <= 1536 ? "bv_resized_desktop" : ""
+        }
+        __name(getImageDeviceName, "getImageDeviceName");
+
+        function isWebpSupported() {
+            var elem = document.createElement("canvas");
+            return elem.getContext && elem.getContext("2d") ? elem.toDataURL("image/webp").indexOf("data:image/webp") == 0 : !1
+        }
+        __name(isWebpSupported, "isWebpSupported");
+
+        function getExtension(url) {
+            return url.split(".").pop().toLowerCase().split("?")[0]
+        }
+        __name(getExtension, "getExtension");
+
+        function getNewImageUrlSVG(url, webp_status, encoded_url, dimensions) {
+            let url_and_query_string = url.split("?"),
+                new_url = url_and_query_string[0],
+                query_string = url_and_query_string[1];
+            if (!webp_status) return query_string ? url_and_query_string[0] + `?${query_string}` : url_and_query_string[0];
+            var shouldResize = BV_IS_RESIZE_ENABLED && !BV_IMAGES_NOT_TO_RESIZE.some(pattern => new_url.includes(pattern));
+            if (shouldResize) {
+                let resized_infos = get_bv_identifier(encoded_url, "bv-resized-infos"),
+                    device_name = getImageDeviceName(resized_infos, dimensions);
+                if (device_name != "") {
+                    let img_ext = getExtension(new_url);
+                    new_url += "." + device_name + "." + img_ext
+                }
+            }
+            return new_url += ".bv.webp", query_string && (new_url += `?${query_string}`), new_url
+        }
+        __name(getNewImageUrlSVG, "getNewImageUrlSVG");
+
+        function get_bv_identifier(property, attr_identifier = "bv-identifer") {
+            let a = null;
+            try {
+                a = property.match(/.*?base64,(.*?)"/)
+            } catch (error) {
+                bvDebugLog(error)
+            }
+            if (!a || !a[1]) try {
+                a = property.match(/.*?base64,(.*)/)
+            } catch (error) {
+                bvDebugLog(error)
+            }
+            if (a && a[1]) {
+                let b = null;
+                if (attr_identifier == "bv-identifer" ? b = atob(a[1]).match(/.*?bv-identifer="(.*?)"/) : attr_identifier == "bv-bg-style" ? b = atob(a[1]).match(/.*?bv-bg-style="(.*?)"/) : attr_identifier == "bv-resized-infos" ? b = atob(a[1]).match(/.*?bv-resized-infos="(.*?)"/) : attr_identifier == "bv-img-url" && (b = atob(a[1]).match(/.*?bv-img-url="(.*?)"/)), b && b[1]) return attr_identifier == "bv-bg-style" || attr_identifier == "bv-resized-infos" ? atob(b[1]) : b[1]
+            }
+            return !1
+        }
+        __name(get_bv_identifier, "get_bv_identifier");
+        var bv_url_map = JSON.parse("{}");
+        const bvObservedNodesWithCounter = new Map,
+            bv_webp_status = isWebpSupported();
+
+        function bvObserveImgNode(node) {
+            const bv_counter = bvObservedNodesWithCounter.get(node) || 0;
+            bv_counter < 50 && (bvObservedNodesWithCounter.set(node, bv_counter + 1), other_image_observer.observe(node), bvDebugLog("NodeP with backgroundImage :", node))
+        }
+        __name(bvObserveImgNode, "bvObserveImgNode");
+
+        function set_iframe_element_src_v2(iframe_element) {
+            let src_value = iframe_element.getAttribute("bv-data-src");
+            src_value ? (src_value.includes("autoplay=1") && (src_value += "&mute=1"), iframe_element.setAttribute("src", src_value)) : bvDebugLog("IFRAME_SRC_NOT_FOUND : " + entry)
+        }
+        __name(set_iframe_element_src_v2, "set_iframe_element_src_v2");
+
+        function handleOtherImages(entries) {
+            entries.map(entry2 => {
+                if (entry2.isIntersecting) {
+                    const computedStyle = getComputedStyle(entry2.target),
+                        background = computedStyle.getPropertyValue("background") || "none",
+                        backgroundImage = computedStyle.getPropertyValue("background-image") || "none";
+                    let property_value = null,
+                        property_type = null;
+                    if (backgroundImage !== "none" && backgroundImage.match(/url\(/) ? (property_value = backgroundImage, property_type = "background-image") : background !== "none" && background.match(/url\(/) && (property_value = background, property_type = "background"), property_value) {
+                        let bv_img_url = get_bv_identifier(property_value, "bv-img-url"),
+                            bv_bg_style = get_bv_identifier(property_value, "bv-bg-style"),
+                            url_identifier = get_bv_identifier(property_value),
+                            new_url = bv_img_url || (url_identifier ? bv_url_map[url_identifier] : null);
+                        if (new_url) {
+                            const regex = /url\(['"]?(data:image.*?)['"]?\)/g;
+                            if (bv_bg_style && bv_bg_style.length > 0) {
+                                for (;
+                                    (match = regex.exec(bv_bg_style)) !== null;) {
+                                    let new_img_url = getNewImageUrlSVG(new_url, bv_webp_status, property_value, entry2.target.getBoundingClientRect());
+                                    bv_bg_style = bv_bg_style.replace(match[1], new_img_url)
+                                }
+                                let new_bv_bg_style = entry2.target.getAttribute("style") || "";
+                                new_bv_bg_style = new_bv_bg_style + (new_bv_bg_style ? ";" : "") + (bv_bg_style || ""), entry2.target.setAttribute("style", new_bv_bg_style)
+                            } else {
+                                for (;
+                                    (match = regex.exec(property_value)) !== null;) {
+                                    let new_img_url = getNewImageUrlSVG(new_url, bv_webp_status, property_value, entry2.target.getBoundingClientRect());
+                                    property_value = property_value.replace(match[1], new_img_url)
+                                }
+                                entry2.target.style.setProperty(property_type, property_value, "important")
+                            }
+                        }
+                    }
+                    bvObservedNodesWithCounter.delete(entry2.target), other_image_observer.unobserve(entry2.target)
+                }
+            })
+        }
+        __name(handleOtherImages, "handleOtherImages");
+
+        function handleIframesV2(entries) {
+            entries.map(entry2 => {
+                entry2.isIntersecting && (set_iframe_element_src_v2(entry2.target), iframe_observer_v2.unobserve(entry2.target))
+            })
+        }
+        __name(handleIframesV2, "handleIframesV2");
+        const bvCheckNode = __name((node, currentLevel = 1, maxLevel = 1 / 0) => {
+            if (node.nodeType === 1) {
+                const className = node.getAttribute("class");
+                if (node.nodeName === "IFRAME" && typeof className == "string" && className.includes("bv-lazyload-iframe")) iframe_observer_v2.observe(node);
+                else {
+                    const computedStyle = getComputedStyle(node),
+                        background = computedStyle.getPropertyValue("background") || "none",
+                        backgroundImage = computedStyle.getPropertyValue("background-image") || "none";
+                    backgroundImage !== "none" && backgroundImage.match(/url\(/) ? (get_bv_identifier(backgroundImage, "bv-img-url") || get_bv_identifier(backgroundImage)) && bvObserveImgNode(node) : background !== "none" && background.match(/url\(/) ? (get_bv_identifier(background, "bv-img-url") || get_bv_identifier(background)) && bvObserveImgNode(node) : typeof className == "string" && className.includes("bv-lazyload-bg-style") ? bv_style_observer.observe(node) : typeof className == "string" && className.includes("bv-lazyload-tag-img") ? img_observer.observe(node) : typeof className == "string" && className.includes("bv-lazyload-picture") && picture_lazy_observer.observe(node)
+                }
+            }
+            currentLevel < maxLevel && node.childNodes.length && node.childNodes.forEach(childNode => {
+                bvCheckNode(childNode, currentLevel + 1, maxLevel)
+            })
+        }, "bvCheckNode");
+
+        function bv_handle_mutations(mutations) {
+            mutations.forEach(mutation => {
+                if (mutation.type === "childList" && mutation.addedNodes.length) mutation.addedNodes.forEach(node => {
+                    setTimeout(function() {
+                        bvCheckNode(node)
+                    }, 0)
+                });
+                else if (mutation.type === "attributes") {
+                    const targetNode = mutation.target,
+                        attributeName = mutation.attributeName,
+                        attributeValue = targetNode.getAttribute(attributeName);
+                    if (attributeName === "style" && targetNode.style.backgroundImage !== mutation_observer.prevBackgroundImage) {
+                        const computedStyle = getComputedStyle(targetNode),
+                            background = computedStyle.getPropertyValue("background") || "none",
+                            backgroundImage = computedStyle.getPropertyValue("background-image") || "none";
+                        backgroundImage !== "none" && backgroundImage.match(/url\(/) ? (get_bv_identifier(backgroundImage, "bv-img-url") || get_bv_identifier(backgroundImage)) && bvObserveImgNode(targetNode) : background !== "none" && background.match(/url\(/) && (get_bv_identifier(background, "bv-img-url") || get_bv_identifier(background)) && bvObserveImgNode(targetNode)
+                    } else attributeName === "class" && setTimeout(function() {
+                        bvCheckNode(targetNode)
+                    }, 0)
+                }
+            })
+        }
+        __name(bv_handle_mutations, "bv_handle_mutations");
+
+        function handle_mod_key_nodes() {
+            let node_elements = document.querySelectorAll("[bv-img-mod-key]");
+            for (let i = 0; i < node_elements.length; i++) {
+                let element = node_elements[i],
+                    target_key = element.getAttribute("bv-img-mod-key"),
+                    mod_url = element.getAttribute(target_key);
+                if (mod_url) {
+                    let bv_img_url = get_bv_identifier(mod_url, "bv-img-url"),
+                        url_identifier = get_bv_identifier(mod_url),
+                        old_url = bv_img_url || (url_identifier ? bv_url_map[url_identifier] : null);
+                    if (old_url) {
+                        let dimensions = element.getBoundingClientRect(),
+                            new_img_url = getNewImageUrlSVG(old_url, bv_webp_status, mod_url, dimensions);
+                        element.setAttribute(target_key, new_img_url)
+                    }
+                }
+            }
+        }
+        __name(handle_mod_key_nodes, "handle_mod_key_nodes");
+
+        function bvRemoveEventListeners() {
+            for (const event of bv_lazyload_events) window.removeEventListener(event, handleLazyloadedStyleImages)
+        }
+        __name(bvRemoveEventListeners, "bvRemoveEventListeners");
+
+        function handleLazyloadedStyleImages() {
+            setTimeout(function() {
+                bvRemoveEventListeners()
+            }, 0), document.querySelectorAll("body *").forEach(_element => {
+                setTimeout(function() {
+                    bvCheckNode(_element, 1, 1)
+                }, 0)
+            })
+        }
+        __name(handleLazyloadedStyleImages, "handleLazyloadedStyleImages"), handle_mod_key_nodes();
+        let other_image_observer, iframe_observer_v2, mutation_observer;
+        "IntersectionObserver" in window && (other_image_observer = new IntersectionObserver(handleOtherImages), iframe_observer_v2 = new IntersectionObserver(handleIframesV2)), "MutationObserver" in window && (mutation_observer = new MutationObserver(bv_handle_mutations), mutation_observer.prevBackground = "", mutation_observer.prevBackgroundImage = "", mutation_observer.observe(document.body, {
+            childList: !0,
+            subtree: !0,
+            attributes: !0,
+            characterData: !0
+        })), "IntersectionObserver" in window && "MutationObserver" in window && window.addEventListener("load", event => {
+            for (const event2 of bv_lazyload_events) window.addEventListener(event2, handleLazyloadedStyleImages, {
+                once: !0
+            })
+        });
+    </script>
+
+    <script id="bv-rename-images" type="text/javascript" data-cfasync="false" bv-exclude="true">
+        var __defProp = Object.defineProperty;
+        var __name = (target, value) => __defProp(target, "name", {
+            value,
+            configurable: !0
+        });
+        const IMAGE_URL_ATTRIBUTES = ["data-src", "data-lazy-original", "data-lazy-src", "data-lazysrc", "data-lazysrcset", "data-lazy-srcset", "data-envira-src", "data-srcset", "bv-data-src", "bv-data-srcset", "data-large_image", "data-depicter-src", "data-depicter-srcset", "data-orig-src"],
+            IMAGE_EXTENSIONS = ["jpg", "jpeg", "png", "gif", "svg", "jpe", "webp"],
+            BV_CDN_URL = "",
+            BV_SITE_OPT_PATH = "al_opt_content";
+        var BV_IS_RESIZE_ENABLED = !0,
+            BV_IMAGES_NOT_TO_RESIZE = [];
+
+        function isValidUrl(url) {
+            return !!/^https?:\/\//i.test(url)
+        }
+        __name(isValidUrl, "isValidUrl");
+
+        function isImage(url) {
+            let img_ext = getExtension(url);
+            return !!IMAGE_EXTENSIONS.includes(img_ext)
+        }
+        __name(isImage, "isImage");
+
+        function getImageDeviceName(resized_infos_str, dimensions) {
+            let device_width = window.outerWidth;
+            if (resized_infos_str) {
+                const device_size_infos = resized_infos_str.split(";");
+                for (const device_info of device_size_infos) {
+                    const [device_name, resized_dim] = device_info.split(":"), [width_str, height_str] = resized_dim.split("*"), width = parseInt(width_str, 10), height = parseInt(height_str, 10);
+                    if (dimensions.width <= width && dimensions.height <= height && device_width <= width) return device_name
+                }
+                return ""
+            }
+            return device_width <= 480 ? "bv_resized_mobile" : device_width <= 820 ? "bv_resized_ipad" : device_width <= 1536 ? "bv_resized_desktop" : ""
+        }
+        __name(getImageDeviceName, "getImageDeviceName");
+
+        function isWebpSupported() {
+            var elem = document.createElement("canvas");
+            return elem.getContext && elem.getContext("2d") ? elem.toDataURL("image/webp").indexOf("data:image/webp") == 0 : !1
+        }
+        __name(isWebpSupported, "isWebpSupported");
+
+        function getExtension(url) {
+            return url.split("?")[0].split(".").pop().toLowerCase()
+        }
+        __name(getExtension, "getExtension");
+
+        function getNewImageUrlQuery(url, webp_status2, dimensions) {
+            let url_and_query_string = url.split("?"),
+                new_url = url_and_query_string[0],
+                query_string = url_and_query_string[1];
+            if (!webp_status2) return query_string ? url_and_query_string[0] + `?${query_string}` : url_and_query_string[0];
+            let params = new URLSearchParams(query_string),
+                resized_infos = params.get("bv-resized-infos");
+            params.delete("bv-resized-infos"), query_string = params.toString();
+            var shouldResize = BV_IS_RESIZE_ENABLED && !BV_IMAGES_NOT_TO_RESIZE.some(pattern => new_url.includes(pattern));
+            if (shouldResize) {
+                let device_name = getImageDeviceName(resized_infos, dimensions),
+                    img_ext = getExtension(new_url);
+                device_name != "" && (new_url += "." + device_name + "." + img_ext)
+            }
+            return new_url += ".bv.webp", query_string && (new_url += `?${query_string}`), new_url
+        }
+        __name(getNewImageUrlQuery, "getNewImageUrlQuery");
+
+        function isOurCdnImage(url) {
+            const hasCdnUrl = typeof BV_CDN_URL == "string" && BV_CDN_URL.length > 0,
+                hasSiteOptPath = typeof BV_SITE_OPT_PATH == "string" && BV_SITE_OPT_PATH.length > 0;
+            return !!(hasCdnUrl && url.includes(BV_CDN_URL) || hasSiteOptPath && url.includes(BV_SITE_OPT_PATH))
+        }
+        __name(isOurCdnImage, "isOurCdnImage");
+
+        function canChangeUrl(url) {
+            return getExtension(url) === "svg" || url.includes("data:image") ? !1 : !!isOurCdnImage(url)
+        }
+        __name(canChangeUrl, "canChangeUrl");
+
+        function handleNodeElements(node_elements, img_url_attrs, webp_status2) {
+            node_elements.forEach(node_element => {
+                img_url_attrs.forEach(attr => {
+                    flag = !1, node_element.hasAttribute(attr) && (attr_val = node_element.getAttribute(attr), new_val = "", attr_val.split(",").forEach(src => {
+                        let src_parts = src.trim().split(" "),
+                            clean_url = src_parts.shift();
+                        if (flag ? new_val += "," : flag = !0, isValidUrl(clean_url) && isImage(clean_url))
+                            if (canChangeUrl(clean_url)) {
+                                let new_url = getNewImageUrlQuery(clean_url, webp_status2, node_element.getBoundingClientRect());
+                                new_val += [new_url].concat(src_parts).join(" ")
+                            } else new_val += src;
+                        else new_val += src
+                    }), node_element.setAttribute(attr, new_val))
+                })
+            })
+        }
+        __name(handleNodeElements, "handleNodeElements");
+
+        function handleTagWithStyle(tag_elements_with_style2, webp_status2) {
+            tag_elements_with_style2.forEach(tag_element => {
+                let img_url = tag_element.getAttribute("bv-style-url");
+                if (img_url && isValidUrl(img_url) && isImage(img_url) && canChangeUrl(img_url)) {
+                    let new_img_url = getNewImageUrlQuery(img_url, webp_status2, tag_element.getBoundingClientRect()),
+                        style_attr_val = tag_element.getAttribute("bv-data-style");
+                    style_attr_val && (new_style_val = style_attr_val.replace(img_url, new_img_url), tag_element.setAttribute("bv-data-style", new_style_val))
+                }
+            })
+        }
+        __name(handleTagWithStyle, "handleTagWithStyle");
+        let webp_status = isWebpSupported(),
+            img_tags = document.querySelectorAll(".bv-tag-attr-replace");
+        handleNodeElements(img_tags, IMAGE_URL_ATTRIBUTES, webp_status);
+        let tag_elements_with_style = document.querySelectorAll(".bv-style-attr-replace");
+        handleTagWithStyle(tag_elements_with_style, webp_status);
+    </script>
+
+</body>
+
+</html>
+<!-- This website is optimized by Airlift. Learn more: https://airlift.net. Template:. Learn more: https://airlift.net. Template: 69df83f646fa5cda282b7fd9. Config Timestamp: 2026-04-15 12:26:29 UTC, Cached Timestamp: 2026-04-25 12:39:24 UTC -->
